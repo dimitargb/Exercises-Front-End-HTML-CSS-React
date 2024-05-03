@@ -1,0 +1,16 @@
+There are 2 options:
+
+1. Create-React-App tool - comes automatically with developer server, module binding with Jest testing Library
+    The problem with this app is that was developed many years ago and uses old and slow tehnologies under the hood;
+    That's why is used just for learning and small projects.
+
+
+2. Vite tool - is used to build real world application.
+    This is a modern build tool that contains a template for for seting up React applications.
+    Here we have to manually set up many very important developer tools such as ESLint, testing library and others.
+    With Vite the pages will update almost instantly, very vaey fast.
+
+To buld new Projects we need to use React Framework such as NEXT.js or Remix !!!
+
+Framework like NEXT.js contains solutions for things like routing, data fatching and server-side rendering !!!
+React Framework is a framework build on top of the React library which makes easyer to build applications!
