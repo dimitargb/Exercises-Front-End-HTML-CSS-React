@@ -1,0 +1,18 @@
+Metods who do not mutate the original array - map, filter and reduce !!!
+
+1. Map method:
+
+The map method will loop over an Array and return a new Array with the same length wit some operation applied on each
+of the elements of the original Array.
+
+const arr = [1, 2, 3, 4, 5].map((el) => el * 2);
+console.log(arr);
+
+const titles = books.map((book) => book.title);
+console.log(titles);
+
+const essentialData = books.map((book) => ({
+  title: book.title,
+  author: book.author,
+  reviewsCount: getTotalReviesCount(book),
+}));

@@ -1,0 +1,7 @@
+The Ternary Operator has 3 parts!!!
+
+pages > 1000 ? "over a thousand" : "less than a thousand";
+
+First Part is the condition pages > 1000;
+Second Part is ? "over a thousand", which is the result of the operation if the condition is true;
+The Third Part is : "less than a thousand", which is the result of the operation if the condition is false;

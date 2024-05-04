@@ -142,9 +142,9 @@ function getBooks() {
 function getBook(id) {
   return data.find((d) => d.id === id);
 }
-
+/*
 // Object Destructuring:
-const book = getBook(1);
+const book = getBook(2);
 book;
 //const title = book.title;
 //const author = book.author;
@@ -174,9 +174,89 @@ const updatedBook = {
 };
 console.log(updatedBook);
 
+// Arrow Functions
+// function getYear(string) {
+//   return string.split("-")[0];
+// }
+// Arrow Function
+// const getYear = (string) => string.split("-")[0];
+// console.log(getYear(publicationDate));
+const getYear = (string) => string.split("-")[0];
+console.log(getYear(publicationDate));
 // Template Literal
-const summury = `${title}, a ${pages}-page long book, was written by ${author} and published in ${
-  publicationDate.split("-")[0]
-}.`;
+const summury = `${title}, a ${pages}-page long book, was written by ${author} and published in ${getYear(
+  publicationDate
+)}. The book has ${hasMovieAdaptation ? "" : "not"} been adapted as a moive`;
 console.log(summury); //(``) this backticks indicates that this is a Template Literal
 summury;
+
+//Ternary Operator
+const pagesRange = pages > 1000 ? "over a thousand" : "less than a thousand";
+pagesRange;
+console.log(`The book has ${pagesRange} pages.`);
+
+//Logical Operators - And Operator &&
+console.log(true && "Some string");
+console.log(false && "Some string");
+console.log(hasMovieAdaptation && "This book has a movie");
+// falsy value: 0, '', null, undefined
+console.log("Dimitar" && "Some friends"); // is truty value and it retruns the info after the truty value
+console.log(0 && "Dimitar"); // it returns 0 because it is a falsy value
+//Logical Operators - Or Operator ||
+// It returns the first true value.
+console.log("Dimitar" || "some string");
+console.log(null || "some string");
+console.log(book.translations.spanish);
+
+const spanishTranlation = book.translations.spanish || "NOT TRANSLATED";
+console.log(spanishTranlation);
+
+// console.log(book.reviews.librarything.reviewsCount);
+// const countWrong = book.reviews.librarything.reviewsCount || "no data";
+
+// Nullish coalescing operator (??)
+// if the result is 0 it will return 0 or another number
+// const countWrong1 = book.reviews.librarything.reviewsCount ?? "no data";
+// console.log(countWrong1);
+
+// function getTotalReviesCount(book) {
+//   const goodreads = book.reviews.goodreads.reviewsCount;
+//   const librarything = book.reviews.librarything.ratingsCount;
+
+//   return goodreads + librarything;
+// }
+// console.log(getTotalReviesCount(book));
+
+// Optional chaining Operator (?.)
+//We ask that JS to only keep what comes before this property if it acctually exsists.
+function getTotalReviesCount(book) {
+  const goodreads = book.reviews?.goodreads.reviewsCount;
+  const librarything = book.reviews?.librarything?.reviewsCount ?? 0; // the chain here continues only if librarything is not undefined!
+  librarything;
+  return goodreads + librarything;
+}
+console.log(getTotalReviesCount(book));
+*/
+
+//Map method:
+const books = getBooks();
+books;
+const arr = [1, 2, 3, 4, 5].map((el) => el * 2);
+console.log(arr);
+
+function getTotalReviesCount(book) {
+  const goodreads = book.reviews?.goodreads.reviewsCount;
+  const librarything = book.reviews?.librarything?.reviewsCount ?? 0; // the chain here continues only if librarything is not undefined!
+  librarything;
+  return goodreads + librarything;
+}
+
+const titles = books.map((book) => book.title);
+console.log(titles);
+const essentialData = books.map((book) => ({
+  title: book.title,
+  author: book.author,
+  reviewsCount: getTotalReviesCount(book),
+}));
+
+essentialData;
