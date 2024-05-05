@@ -1,0 +1,14 @@
+Filter Method - filter some elements of the array based on the condition.
+
+Lets say we want to create an array that has books woth more than 500 pages.
+The filter function will be called for ech element of the array.
+
+If the condition statement returns true(book.pages > 500) the array will go into the new Array longBooks!!!
+
+const longBooks = books.filter((book) => book.pages > 500);
+
+ont this array we can call another filer.
+const longBooks = books.filter((book) => book.pages > 500)
+                        .filter((book)=>book.hasMovieAdaptation);
+
+ we can chain mulitple filters !!!

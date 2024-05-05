@@ -7,9 +7,9 @@ const data = [
     genres: [
       "fantasy",
       "high-fantasy",
-      "adventure",
       "fiction",
       "novels",
+      "adventure",
       "literature",
     ],
     hasMovieAdaptation: true,
@@ -260,3 +260,33 @@ const essentialData = books.map((book) => ({
 }));
 
 essentialData;
+// Filter Method:
+const longBooks = books.filter((book) => book.pages > 500);
+// The filter function will be called for ech element of the array.
+// If the condition statement returns true(book.pages > 500) the array will go into the new Array longBooks!!!
+console.log(longBooks);
+// on this array we can call another filer.
+// we can chain mulitple filters
+const longBooks1 = books
+  .filter((book) => book.pages > 500)
+  .filter((book) => book.hasMovieAdaptation);
+console.log(longBooks1);
+
+// filter with genres 'adventure' - includes() always return either true or false and this is our condition
+// -  book.genres.includes("adventure")
+const adventureBooks = books.filter((book) =>
+  book.genres.includes("adventure")
+);
+console.log(adventureBooks);
+// let chain filter method with map method:
+const adventureBooks1 = books
+  .filter((book) => book.genres.includes("adventure"))
+  .map((book) => book.title);
+console.log(adventureBooks1);
+
+// Reduce Method with numbers
+// If we want to read all the books in the array, and we want to know how many pages we will have to read
+// The solution is to add all together all of the pages proerties of all the books we use for that the Reduce Method.
+const pagesOfAllBooks = books.reduce((sum, book) => sum + book.pages, 0);
+// sum - accumulator, 0 is a starterValue
+console.log(pagesOfAllBooks);
