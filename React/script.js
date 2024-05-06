@@ -237,7 +237,7 @@ function getTotalReviesCount(book) {
 }
 console.log(getTotalReviesCount(book));
 */
-
+/*
 //Map method:
 const books = getBooks();
 books;
@@ -290,3 +290,65 @@ console.log(adventureBooks1);
 const pagesOfAllBooks = books.reduce((sum, book) => sum + book.pages, 0);
 // sum - accumulator, 0 is a starterValue
 console.log(pagesOfAllBooks);
+
+// Sort Method:
+// The sort Method mutates(changes) the original array.
+// In order not to change the array we first do a copy by using slice metohod.
+const arr1 = [7, 3, 1, 9, 6];
+const sorted = arr1.slice().sort((a, b) => a - b);
+console.log(sorted); // sorted fom small to big
+console.log(arr1); // mutates the original array, that's why we use slice to make a copy first.
+const sortedByPages = books.slice().sort((a, b) => a.pages - b.pages);
+sortedByPages;
+
+// Manipulating Arrays - add, delete and udate without to change the original array
+//1. Add a book object to the array !!!
+const newBook = {
+  id: 6,
+  title: "Harry Potter and the Chamber of Secrets",
+  author: "J. K. Rowling",
+};
+const booksAfterAdd = [...books, newBook];
+console.log(booksAfterAdd);
+
+// 2. Delete a book from array !!!
+const booksAfterDelete = booksAfterAdd.filter((book) => book.id !== 3);
+console.log(booksAfterDelete);
+
+// Update the book Object in the array !!!
+const booksAfterUpdate = booksAfterDelete.map((book) =>
+  book.id === 1 ? { ...book, pages: 1210 } : book
+);
+console.log(booksAfterUpdate);
+*/
+
+// Using Promises in JavaScript
+
+// we use a function fetch() - this is a Promis because we need to wait untill it gets the data from server
+console.log(fetch("https://jsonplaceholder.typicode.com/todos"));
+
+// a) - Promiss can be pending if it is doing something in the background.
+// b) - Promiss can be rejected if there is an error ib fetching the data.
+// c) - Promiss can be rejected can be fullfilled, which means that the data has successfully arraived.
+// we  can hendle the fullfiled State by using the then method!!!
+// the then method will be called as soon as the promiss has been fullfilled!!!
+// then the data ater response needs to be converted form JSON to JS Object
+// afeter converting it will return another promise, that's why we need to add another then with final data in JS form.
+// fetch("https://jsonplaceholder.typicode.com/todos")
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));
+
+// Using Async Await in JS for fatching data from external API
+
+// with word await we are stopping the function
+//res is the result stored into an variable !!!
+async function getTodos() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+  const data = await res.json();
+  console.log(data);
+
+  return data;
+}
+
+const todos = getTodos();
+console.log(todos);
