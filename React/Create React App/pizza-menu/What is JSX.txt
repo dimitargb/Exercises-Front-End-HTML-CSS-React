@@ -1,0 +1,20 @@
+The cpmponent contains his own data, logic and appearance !!!
+
+JSX is a Declerative syntax to describe what components look like and how they work!!!
+
+Each component must return one block of JSX, which React wil then use to render the component on the web.
+
+Components must return a block of JSX.
+
+JSX is an extension of JS that allows us to embed JavaScript, CSS, and React components into HTML.
+
+Each JSX element is converted to a React.createElement function call.
+
+React use a Declerative approach to build websites, JS use Imperative approach.
+Declerative is to discribe what the UI should look like always based ont the current data - props and State.
+
+We use JSX to discribe the UI(User Interface), based on props and State !!!
+React is abstraction away form DOM, we never touch the DOM.
+Instead we think of the UI as a Reflection of the current data.
+
+JSX combines HTML, CSS and JavaScript into one Single block of code !!!

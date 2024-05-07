@@ -1,0 +1,32 @@
+Componenets are the most fundamental concept in React.
+
+React applicationas are entirly made of components.
+
+Componenets are the building blocks of any user interface in React.
+what React does is take components and drow them into the web page.
+
+Each component has its own data, JS logig and appearance !!!
+
+We build complex web sites by building multiple components and combining them!!!
+
+We nest components inside each other !!!
+
+Whenever we need some duplication in our UI(user-interface), we can create a new component and reuse it.
+
+In React we have parents and child components. They are connnected together.
+
+In React we write new Components using functions.
+The function name need to be with upperCase Letter - function Pizza(), and second the function needs to return some markup!!!
+
+function Pizza() {
+  return (
+    <div>
+      <img src="pizzas/salamino.jpg" alt="Pizza salamino" />
+      <h2>Pizza Salamino</h2>
+      <p>Tomato, mozarella, and pepperoni</p>
+    </div>
+  );
+}
+
+The images have to be in a public folder to load formt there.
+Each Component can only return exactely one element!!!
