@@ -1,0 +1,31 @@
+The first file to create is index.js
+The module exepects the entry point to be called index.js !!!
+
+- import React from "react";
+- import { ReactDOM } from "react-dom/client";
+
+function App() {
+  return (
+    <div>
+      <h1>Wellcome to React Development !!!</h1>
+      <Pizza />
+      <Pizza />
+    </div>
+  );
+}
+ 
+// This is the way we render our App in the DOM in React version 18 and above.!!!
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
+
+// In StrictMode is like this:
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+Strict Mode during development will render our componensts twice in order to find certain bugs and also
+React will check if we are using outdated parts of the React API
+
+Creating a brand new component !!

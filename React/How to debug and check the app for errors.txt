@@ -1,0 +1,5 @@
+First check if u started the application with npm start.
+If it has started but is not reloading restart the app, Ctrl+C to stop it, then write npm start.
+
+Another tip is all the time to keep the page open with the expecting f12 and having the 
+console tab open, because if there are some errors they will sho up here in this console.
