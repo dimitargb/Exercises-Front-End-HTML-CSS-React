@@ -1,0 +1,22 @@
+React renders a component based on it's current Data.
+And the UI will always be capt in sync with that Data.
+
+The Data React uses to render a component is mad of Propes and State !!!
+
+Props can only be updated by the parent component iteself !
+
+State can be updated by the component's logic iteself.
+
+This means that props are immutable, they can not be changed and a read-only!!
+If you need to mutate props, you need th change tha State.
+
+Props are just an object, therefore if you change the pros object in the component, you will affect the Parent Component.
+Side effect happend whenevr you change some Data that's located outside of the current function.
+
+Components have to be pure Functions, this helps optimize app, avoid bugs ect.
+
+So a component should never mutate any Data that we write outside it's function scope.
+
+React uses One Way Data Flow !!!
+It means in React applications, data can only be passes from Paernt to Child Component !!
+This happends by using Props.

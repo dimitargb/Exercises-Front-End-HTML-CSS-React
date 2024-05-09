@@ -1,0 +1,45 @@
+Props means how we pass data between components.
+In particular form Parentcomponent to Childcomponent.
+Props is like a communictation between a parent and a child.
+
+Prop simply stends for property !!! - name, ingredients, photoName and price are Props(poperties) of the menu !!!
+
+We use Props in React to pass data from PatentComponent to ChildComponent !!!
+Props are an essential React tool to costumize and  configure components!!!
+
+function Menu() {
+  return (
+    <main className="menu">
+      <h2>Our menu</h2>
+      <Pizza
+        name="Pizza Salamino"
+        ingredients="Tomato, mozarella, and pepperoni"
+        photoName="pizzas/salamino.jpg"
+        price={10} - if we want to pass here a number 
+      />
+
+        <Pizza
+        name="Pizza Funghi"
+        ingredients="Tomato, mozarella, mushrooms, and onion"
+        photoName="pizzas/funghi.jpg"
+        price={15} // this is the way we allocate it as a number not as a string in JS!!!
+      />
+    </main>
+  );
+}
+
+The second step is to revieve the Props inside the child component - function Pizza()
+
+function Pizza(props) {
+  console.log(props);
+  return (
+    <div>
+      <img src={props.photoName} alt={props.name} />
+    <div
+      <h3>{props.name}</h3>
+      <p>{props.ingredients}</p>
+      <span>{props.price}</span>
+    </div>
+    </div>
+  );
+}

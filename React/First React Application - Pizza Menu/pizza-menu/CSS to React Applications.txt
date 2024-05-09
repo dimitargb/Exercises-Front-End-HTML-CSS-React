@@ -1,0 +1,16 @@
+We can use inline styling.
+We can use external CSS.
+We can use CSS modules and ect.
+
+Fer now we use inline CSS:
+
+function Header() {
+  return <h1 style={{ color: "red", fontSize: "32px" }}>Fast React Pizza Co.</h1>;
+}
+
+In real world we use external CSS file.
+First we need to import our CSS files from index.css.
+
+import "./index.css" if it is in the src folder!!!
+Now we need to add the classes!!!
+In JSX we can not use class but we use className!!
