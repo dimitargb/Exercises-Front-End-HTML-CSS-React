@@ -1,0 +1,20 @@
+Here we will see 3 ways  how to render a JSX or entire component based on condition 
+
+1. Rendering with && operator.
+
+Because isOpen is true, the second Part of the &&(End Operator) will be returned!!
+In this case 'Open' will be displayed on the screen.!!!
+
+If isOpen is falsy, the second part 'Open' will not be displayed !!!
+
+function Footer() {
+ const hour = new Date().getHours();
+  const openHour = 10;
+  const closeHour = 22;
+  const isOpen = hour >= openHour && hour <= closeHour;
+
+return (
+    <footer className="footer">{isOpen && <p>Open</p>}</footer>
+    
+  );
+}

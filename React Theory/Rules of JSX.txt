@@ -1,0 +1,17 @@
+JSX works like the HTML it has very sillimar syntax, we can enter JavaScript mode by using {}
+any where were a value like text or attribute is expected.
+
+Into this JavaScript mode we can place any JavaScript experssion like: variables, arrays, create objects, loop over arrays
+using map(), trenary operator exetera.
+
+What is not allowed are statemanets like: if/else, for, switch.
+
+A piece of JSX produces a JavaScript expression:
+const element = React.createElement('h1', null, 'Hello React!');
+
+Difetences wit HTML:
+-className intead of class
+-every tag needs to be closed
+-all eventhandlers and other properties needs to be written in camelCase.
+-CSS inline are written like this:{{<style}}
+-CSS property names are also in camelCase

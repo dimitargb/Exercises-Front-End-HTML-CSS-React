@@ -1,0 +1,39 @@
+React Fragments allows us to have more than just one element inside a piece of JSX !!!
+
+React Fragment let's us group some elements without leaving any trace in the HTML three!!!
+
+This <> and </> is a Fragment. 
+
+Sometimes we need to add a key to a React Fragment, when we are using it to render a list,
+then we write <React.Fragment> and we close </React.Fragment>.
+If we need then we could add a key='hello'
+
+
+function Menu() {
+  const pizzas = pizzaData;
+  //const pizzas = [];
+  const numPizzas = pizzas.length;
+
+  return (
+    <main className="menu">
+      <h2>Our menu</h2>
+
+      {numPizzas > 0 ? (
+        <React.Fragment>
+          <p>
+            Authentic Italian cusine. 6 creative dishes to choose form. All from
+            our stone oven, all organic, all deliciuous.
+          </p>
+          <ul className="pizzas">
+            {pizzas.map((pizza) => (
+              // <Pizza name={pizza.name} photoName={pizza.photoName} />
+              <Pizza pizzaObj={pizza} key={pizza.name} />
+            ))}
+          </ul>
+        </React.Fragment>
+      ) : (
+        <p>We are still working on our menu. Please come back later.</p>
+      )}
+    </main>
+  );
+}
