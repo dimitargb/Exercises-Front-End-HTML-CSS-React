@@ -1,0 +1,17 @@
+Using Async Await in JS for fatching data from external API.
+
+We create an async function using the await word !!!
+
+with the  word await we are stopping the function
+res is the result stored into an variable !!!
+
+async function getTodos() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+  const data = await res.json();
+  console.log(data);
+  
+}
+
+getTodos();
+
+The reult of an async function is always a promise !!!!

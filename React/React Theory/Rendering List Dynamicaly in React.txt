@@ -1,0 +1,31 @@
+If we have lets say 4 components in the array aw like 4 componenst to be renderd dynamically.
+In our exsample we have 6 pizza obejecst in the array.
+
+The key must be unic for each child of the Pizza key={pizza.name} !!!
+
+function Menu() {
+  return (
+    <main className="menu">
+      <h2>Our menu</h2>
+      <div>
+        {pizzaData.map((pizza) => (
+          <Pizza pizzaObj={pizza} key={pizza.name} />
+        ))}
+      </div>
+    </main>
+  );
+}
+
+function Pizza(props) {
+  console.log(props);
+  return (
+    <div className="pizza">
+      <img src={props.pizzaObj.photoName} alt={props.pizzaObj.name} />
+      <div>
+        <h3>{props.pizzaObj.name}</h3>
+        <p>{props.pizzaObj.ingredients}</p>
+        <span>{props.pizzaObj.price}</span>
+      </div>
+    </div>
+  );
+}

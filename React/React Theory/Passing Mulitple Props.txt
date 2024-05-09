@@ -1,0 +1,45 @@
+Those are: <Order closeHour={closeHour} openHour={openHour} />
+
+Which are destructured here!!
+
+function Footer() {
+  const hour = new Date().getHours();
+  const openHour = 10;
+  const closeHour = 22;
+  const isOpen = hour >= openHour && hour <= closeHour;
+  console.log(isOpen);
+
+  // if (!isOpen) {
+  //   return (
+  //     <p>
+  //       We are happy to wellcome you between {openHour}:00 and {closeHour}:00.
+  //     </p>
+  //   );
+  // }
+
+  return (
+    <footer className="footer">
+      {isOpen ? (
+        <Order closeHour={closeHour} openHour={openHour} />
+      ) : (
+        <p>
+          We are happy to wellcome you between {openHour}:00 and {closeHour}:00.
+        </p>
+      )}
+    </footer>
+    // This is the power to combine JS write into the HTML - new Date().toLocaleTimeString()
+  );
+  //return React.createElement("footer", null, "We are currenty open!");
+}
+
+function Order({ closeHour, openHour }) {
+  return (
+    <div className="order">
+      <p>
+        We are open form {openHour}:00 until {closeHour}:00. Come visit us or
+        order online.
+      </p>
+      <button className="btn">Order</button>
+    </div>
+  );
+}

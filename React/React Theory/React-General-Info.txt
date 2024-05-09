@@ -1,0 +1,35 @@
+Whenever we neeed something to change in the user interface we need to change the state.
+To create new state we need to do it on the top level of our function.
+State is necessary whenever we want to udate somethin on the screen !!!
+
+That's why we use useState 
+Second we use useEffect
+
+const [advice, setAdvice] = useState("");
+
+And we import it on top:
+import { useState } from "react";
+
+React is a library, not a framework.
+
+React keeps the userItreface in sync with the state, that's why it is so important!!!
+
+React is a component-based, state-driven JS Library for building users interfaces !!!
+
+React is all about components such as: buttons, input fileds, searchBars and ect.
+Components are the building blocks of the userintrfaces in React!!!
+What React is basiccaly take components and drow them on the webPage!!!
+We can reuse components again and again!!
+
+In order to describe each component and how it works we use a special declerative syntax - JSX!!!
+With this we tell React what will have to happend when some data chages but not how to do it using JSX!!
+
+JSX is a syntax that combines HTML, CSS, JavaScript, as well as referencing other components.
+
+Main goal of React is always to keep the UI(user intrface)in sync witnh the data.
+Here comes the Sate. React is state - driven.
+
+REACT REACTS TO STATE CHANGES BY RE-RENDERING THE UI !!!
+
+1. React is really good on rendering components on a webpage(UI), based ont their current state.
+2. React is really good in keeping the UI in sync with the state, by re-rendering(reacting) when the state of the components  chages  .
