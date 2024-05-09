@@ -1,3 +1,0 @@
-Falsy value is: 0, '', null, undefined;
-
-Everythig elese is trhuty value.
