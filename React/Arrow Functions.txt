@@ -1,9 +1,0 @@
-const getYear = (string) => string.split("-")[0];
-console.log(getYear(publicationDate));
-If the arrow function is on one line we can use without curly braces{} and automaticcaly it will return the result after =>
-
-If we use curly braces{} we need to write manualy return statemant, otherwise it will be undifined.
-
-const getYear = (string) => {
-    return string.split("-")[0];
-};
