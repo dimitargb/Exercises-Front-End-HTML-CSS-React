@@ -1,7 +1,0 @@
-First open the Command prompt and write dir
-After that cd Documents and go itno this folder.
-To go back type cd..
-When we get to the folder we wont to create our application type: 
- npx create-react-app@5 pizza-menu (the name of the app you want to build) - @5- this is version 5 of create-react-app !!!
-
-To run the project type npm start
