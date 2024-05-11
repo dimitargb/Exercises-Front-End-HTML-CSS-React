@@ -1,0 +1,25 @@
+First we crate a state variable and to do that we use a useState Function.
+
+import { useState } from "react";
+
+useState() it takes a variable inside and that is the default value of the State variable.
+In our application this is step 1. This function will return ana array. So:
+
+const array = useState(1) , the second value in the useState is a function we can use to udate our state Variable.
+so what we do we destructure the array -> const[step, setStep] - set and the name of the veriable = setStep.
+
+const [step, setStep] = useState(1);
+
+The last step is to actually update the state.
+
+We use the setStep() to update the state Variable !!!
+
+  function handleNext() {
+    setStep(step + 1);
+  }
+So when we click the Next button the step should go one up.
+
+The useState() function is a Hook in React !!!
+We can identify Hooks because they start with use-Keyword -> useState is a Hook !!!
+
+We should only udate the state in UI using the useState Function or Hook, but not manually!!!

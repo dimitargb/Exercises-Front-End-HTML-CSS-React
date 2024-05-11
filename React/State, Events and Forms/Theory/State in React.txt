@@ -1,0 +1,23 @@
+In order to make a Component interactive we need State.
+
+State is the most important concept in React !!!
+We will learn what is State, what it does and why we need it.
+
+State is the memory of the Component.
+Exsamples are messages(6), notificatinsFiled(15) content of a shopping Cart(35$).
+
+A piece of state/ state variable is a sigle variable in a Component state.
+
+The general term state is all the pices of state together.
+
+Updating State triggers React to rerender the Component !!!
+
+When one single Component is rendered we called it a view!!
+All the vies combined together make the final UI(User Interface)!!!
+
+State is how React keeps the UI(User Interface) in sync with the Data !!!
+We change the Sate we change the UI !!!
+
+1. State allows us to update the Component view by rerendering the Component!
+
+Mastering the State, will unlock the power of React Development !!!
