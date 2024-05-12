@@ -23,3 +23,6 @@ The useState() function is a Hook in React !!!
 We can identify Hooks because they start with use-Keyword -> useState is a Hook !!!
 
 We should only udate the state in UI using the useState Function or Hook, but not manually!!!
+
+Allawya treat State as umuteble in React, as something you can not change directly, but you can only chnage using
+the tools that React gives us - using the State setter function - useState()

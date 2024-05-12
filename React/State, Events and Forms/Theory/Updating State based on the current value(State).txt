@@ -1,0 +1,19 @@
+Instead of a value we pass a callback Function here:
+-> instead of setStep(step + 1) we write  setStep((currentStep) => currentStep + 1);
+
+function handleNext() {
+    if (step < 3) {
+      setStep((currentStep) => currentStep + 1);
+    }
+    // setTest({ name: "Ivaylo" });
+  }
+
+Always use a callback Function when we want to update State based on the current value of that State !!!
+
+When we are setting the State not based on the current State we can set the value as normal.
+For exsample:
+
+const [test, setTest] = useState({ name: "Dimitar" });
+ setTest({ name: "Ivaylo" });
+
+In this case we dont need callback Function !!!

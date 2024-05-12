@@ -1,0 +1,16 @@
+In React we do not manilpulate the DOM direcltly when we want to update the componenst view !!!
+This is because React is declerative not imperative. We never touch the DOM in our code.
+
+How is component view udated? - React updates a Component veiw by rerendering the etire Component.
+
+When State is updated the Component is authomatically re-rendered.
+
+When the eventHandler is clicked, this updates a pice of  State in out Component using the useState() function.
+Than when React sees that the State has been changed it will automatically re-render the Component whuch will result
+in an updatet View for this Component.
+
+Whenever we want to update a Component view, we update it's State.
+
+Reacts reacts on State changes by re-rendering the UI(User Interface)!!!
+
+Frameworks exsitsts to keep the UI in sync with the Data.

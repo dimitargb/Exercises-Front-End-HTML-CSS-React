@@ -1,0 +1,17 @@
+Each Component manages his own state.
+
+If we change the State of one Component it will not effect the State ofthe other Components!!!
+
+With the State we now view the UI as a reflection of Data changing over time!!
+
+Practical GuideLines on how to use State:
+1. You should create a new stateVariable for any Data that the Component should keep truck off over time!!
+
+2.Whenever you want something in your Component to be dynamic, create a pice of State related to that thing, than
+  update the State when the thing should change!
+
+  For exsample create variable isOpen, if is true the window is open, when is false we hide it!
+
+3.Udateing the State is happaning with the event Handler function.
+
+4. For a data that will not re-render the Component, dont use State, use regular variable.
