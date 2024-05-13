@@ -1,0 +1,13 @@
+State is an internal Data, data which is owned by the Component!!!
+
+Props is an external Data, owned by Parent Component, where Parents can pass Data into Children!!!
+
+State can be updated by the Component itself!!!
+
+Updating State couses Component to re-render, which is used to make Component interactive!
+
+Props are read-only, they can not be modified by the component that is recieving them!!!
+
+When the Child Component recieves new updated Props, that couses the Component to re-render!!!
+
+Props are used by Parent Components the abilty to configure their Child Components!!!

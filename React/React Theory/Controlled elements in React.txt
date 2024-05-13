@@ -1,0 +1,54 @@
+In order to implement the controlled elements Techinc we follow 3 steps:
+
+1. We create a pice of State.
+   We always need the  value={description} and the onChange={(e) => {setDescription(e.target.value);}}
+
+We create this in the From function -> const [description, setDescription] = useState("");
+
+2.Than we use this piece of State on the element that we want to controll. We force the element to always take
+  the value of this State element.
+
+3. Finally we need to update this State variable with onChange={(e) => {setDescription(e.target.value)}}
+
+
+function Form() {
+  const [description, setDescription] = useState("");
+  const [quantity, setQuantity] = useState("1");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    if (!description) {
+      return;
+    }
+
+    setDescription("");
+    setQuantity(1);
+
+    const newItem = { description, quantity, packed: false, id: Date.now() };
+    console.log(newItem);
+  }
+
+  return (
+    <form className="add-form" onSubmit={handleSubmit}>
+      <h3>What do you need for your 😍trip?</h3>
+      <select
+        value={quantity}
+        onChange={(e) => setQuantity(Number(e.target.value))}
+      >
+        {Array.from({ length: 20 }, (_, i) => i + 1).map((num) => (
+          <option value={num} key={num}>
+            {num}
+          </option>
+        ))}
+      </select>
+      <input
+        type="text"
+        placeholder="Item..."
+        value={description}
+        onChange={(e) => setDescription(e.target.value)}
+      />
+      <button>Add</button>
+    </form>
+  );
+}
