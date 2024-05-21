@@ -1,0 +1,65 @@
+.main-nav {
+    
+}
+
+.main-nav ul {
+    padding: 0;
+    list-style: none outside;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin: 0 0.2em;/*отгоре и одолу margin 0, отляво и дясно margin 0.2em*/
+}
+
+.main-nav a {
+    display: block;
+    padding: 0.5em 0.8em;/*отгоре и отдолу 0.5em, отляво и дясно 0.8em*/
+    text-decoration: none; /*да няма подчертано отгоре и отдолу*/
+    color: #369;
+    background-color: #EEE;
+    border: 2px solid #CCC;
+    border-radius: 0.3em;
+}
+
+.main-nav a:hover {
+    background-color: #369;
+    color: white;
+    border-color: orange;
+}
+
+.site {
+    max-width: 45em;
+    margin: 2em auto; /* отгоре и отдолу, отляво и отдясно */
+    background: rgb(222, 219, 219);
+    border-radius: 1em;
+    padding: 2em;
+}
+
+.site-header {
+    border-bottom: 2px solid #444;
+    position: relative;
+    border: 2px solid red;
+    margin-bottom: 2em;
+}
+
+.site-title {
+    max-width: 50%;
+    line-height: 1;
+}
+
+.main-nav {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.site-title a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}

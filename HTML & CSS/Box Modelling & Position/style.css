@@ -1,0 +1,44 @@
+
+
+body {
+    background: rgb(228, 220, 220);
+}
+
+p {
+    background: rgb(129, 127, 127);
+}
+
+span {
+    background: #080;
+    padding: 0.5em;
+    margin: 0.5em;
+    display: inline-block;
+}
+
+.margin {
+    background: orange;
+    padding: 1em;
+    border: 2px ;
+}
+
+.border {
+    padding: 0.5em;
+    background-color: lightgreen;
+}
+
+.padding {
+    padding: 1em;
+    background: greenyellow;
+}
+
+.box {
+   border: 2px solid #333;
+   padding: 1em;
+   line-height: 1;
+   margin: 1em;
+   background: lightblue;
+}
+
+.box2 {
+    margin-top: 1em;
+}

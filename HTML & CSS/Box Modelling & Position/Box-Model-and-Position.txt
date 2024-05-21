@@ -1,0 +1,40 @@
+Box Model - свеки един елемент в HTML или CSS малко или монго е правоълълник, кутиика с размери - дължина, височина и т.н.
+
+padding(зелено) - отстоянието между елемента и вътрешната част преди border.
+
+margin(оранжаво) - отстоянието между елемента и външната част след border.
+
+with - е размера по широчина.
+
+hight - е размера по височина.
+
+Box Model CSS properties:
+
+1. Display:
+
+display: block - елемнти които заемат цялото простартнство(до края на реда на страницата) и създават нов ред преди и след тях.
+
+display: inline - те са част от текста.
+
+display: inline-block - дава възможност да задаваме margin и padding по хоризонтала и по вертикала.
+
+with - по подразбиране широчината е на 100% до края на реда.
+
+<span> е inline element и текста застава на един ред ако имаме три спана един под друг от Demo.
+
+Block -elememts - са div, h1, main, article, content, aside, section, header, footer и т.н. те са като контейнери за други елементи.
+п
+<span> е inline element 
+
+Inline elememts - това са елементи които са част от текст. - <а>; 
+
+min-width - sets the minimum width of an element. 
+max-width - sets the maximum width of an element. 
+с overflow може да видим съдържанието ако зададените от нас размери са по-малки.
+
+hight
+min-hight
+max-hight
+
+margin - отстоянието между елемента и външната част след border.
+border

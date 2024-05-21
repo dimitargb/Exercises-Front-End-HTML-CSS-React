@@ -1,0 +1,12 @@
+Много важно за box-sizing за да не се изчисляват стойностите слагаме следния код в reset.css:
+
+html {
+  box-sizing: border-box;
+}
+*, * :before, *:after {
+  box-sizing: inherit;
+}
+
+overflow: hidden; - Demo-Box-Sizing.html - автоматично оправя проблема с разтоянието отгоре и отдолу за да не се застъпва !!!
+
+За да сложим три кутиики които са една под друга една до друга използваме - dispaly: inline-block !!!

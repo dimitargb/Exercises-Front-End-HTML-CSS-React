@@ -1,0 +1,10 @@
+body {
+    min-height: 100vh;
+}
+vh = view port hight - размер на екрана.
+height: 20vh; - 20 % от екрана на барузера.
+vw = view port width - 30% от екрана на барузера.
+
+stcky-footer - е обяснено в упражнението - ceneter-div-position.css
+
+font с преливащи цветове - gradient css genertor - пишем в google.com

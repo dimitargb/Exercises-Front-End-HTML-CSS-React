@@ -1,0 +1,36 @@
+top right bootm left - shorthand - margin: 1em 0 0 0 - така се задават 4 стойности като top е 1em другите са нула.
+top right bootm left - shorthand - padding: 1em 0 0 0.
+
+margin: 1em 0 - първата стойност е за отгоре и отдолу, втората е за отляво и отдясно.
+padding: 1em 0 - първата стойност е за отгоре и отдолу, втората е за отляво и отдясно
+
+margin-block: 1em - означава едновременно отгоре и отдолу 1ем
+margin-block-start: 1em - означава margin top
+margin-block-end: 1em - означава margin right
+
+padding-block: 1em - означава едновременно отгоре и отдолу 1ем
+padding-block-start: 1em - означава padding top
+padding-block-end: 1em - означава padding left
+
+margin-inline: 1em - означава едновременно отляво и отдясно
+padding-inline: 1em - означава едновременно отляво и отдясно
+
+1em = 16px
+
+.box {
+    margin: 1em 0 0 0; top
+    margin: 0 0 0 1em; left
+    margin: 1em 0
+
+    padding: 1em 0 0 0; top
+    padding: 0 0 0 1em; left
+    padding: 1em 0
+}
+
+Border Box - Standart Box Model - 
+
+Alternative CSS Box Model - за да се използва този модел казваме box-sizing: border-box !!!
+
+.box {
+  box-sizing: border-box;
+}

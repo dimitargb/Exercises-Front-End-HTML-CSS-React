@@ -1,0 +1,95 @@
+/* Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+body table input textarea {
+    font: inherit;
+}
+
+html {
+    font: 16px/1.5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p, ul, ol {
+    padding-bottom: 1.5em;
+}
+
+/* Layout */
+
+.site {
+    max-width: 45em;
+    margin: 2em auto; /* отгоре и отдолу, отляво и отдясно */
+    background: rgb(222, 219, 219);
+    border-radius: 1em;
+    padding: 2em;
+}
+
+.site-header {
+    border-bottom: 2px solid #444;
+    position: relative;
+}
+
+.main-nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 0.5em;
+}
+
+.site-title a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}
+
+.site-footer {
+    border-top: 2px solid #444;
+    padding-top: 0.5em;
+}
+
+.site-footer p:last-child {
+    padding: 0;
+}
+
+/* Navigation */
+
+.main-nav a {
+     display: block;
+     text-decoration: none;
+     color: green;
+     padding: 0.5em 1em;
+     margin: 0.2em;
+     background: wheat;
+     border-radius: 0.3em;
+}
+
+.main-nav a:hover{
+    background: #060;
+    color: white;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav ul {
+    padding: 0;
+}
+

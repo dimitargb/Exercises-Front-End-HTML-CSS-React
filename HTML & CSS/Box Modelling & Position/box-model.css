@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(228, 226, 226);
+}
+
+.container {
+    background: rgb(167, 165, 165);
+    max-width: 30em;
+    overflow: hidden;
+    /*position: relative;*/
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.box {
+    display: inline-block;
+    background: orange;
+    margin: 0.5em 0;
+    width: 33.3%;
+    padding: 1em;
+}
+
+.box:nth-child(2){
+    background: greenyellow;
+    /*position: relative;
+    top: 5px;
+    left: 5px;*/
+   /* position: absolute;
+    bottom: 0;
+    left: 0;*/
+}
