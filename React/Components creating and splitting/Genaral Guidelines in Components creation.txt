@@ -1,0 +1,13 @@
+1. Creating a new component, creats a new abstraction. More abstractions require more mental energy.
+    So try not to create new components to early.
+
+2. Name a component accordint to what it does or waht it displays.
+
+3. Never declare a new component inside onother component!!!
+
+4. Co-locate related components inside the same file.
+
+5. It is completely normal that an application has components of different sizes(small and big ones).
+
+Small components are highly reusible and have vaey low complexity, which sometimes is exactely what we need.
+The Big Components are not ment to be reused!

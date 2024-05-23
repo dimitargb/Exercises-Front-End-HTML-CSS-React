@@ -1,0 +1,11 @@
+Four criteria for splitting the UI into components:
+
+1. Logical separation of the content/ layout.
+
+2. We have to try to make some of this componens reusable.
+
+3. Ensure that each component has single well defined responsability.
+
+4. Creating components according your personal coding style.
+
+Start with relatively big component and then split into smaller components as it is necessary.
