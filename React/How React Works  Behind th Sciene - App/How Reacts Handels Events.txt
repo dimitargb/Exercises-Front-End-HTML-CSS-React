@@ -1,0 +1,4 @@
+Whenever a click(onClick) happends on the button, a new event Object is fired off which will travle down the DOM Tree
+untill it reaches his target -> the button, from there the event wil bubble back up, 
+than as soon as the event reaches the 'root'conatiner, where React regesters all the Handlers the Event will finally 
+get handled. Once this is all done, the event continious to bubble up untill it disappears.

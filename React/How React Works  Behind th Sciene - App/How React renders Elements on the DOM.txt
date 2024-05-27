@@ -1,0 +1,53 @@
+State chnages triggers rendering!!!
+In React rendering is not about updating the DOM, or displaying elements on the screen. 
+Rendering only happnes internally inside of React and does not produce any visual changes!!!
+Afeter rendering phase is coming the Commit Phase in whish the traditional redering is happening.
+
+In this phase the brouser will notice that the DOM has been updated and repaints the screen.
+
+1. Triggernig Render Phase - 2 ways of doing this:
+        a. Initial render of the application
+        b. State is updated in one or more components instances(re-render)
+    The render prosecc is triggered for the entire application, not for just for one single component !!!
+    That does not mean that the entire DOM is updated.
+
+    The render is not triggred imediatley after the State is updated, but is scheduled when the Js engine has so 'free time'.
+    This takes usually 2 -3 mili seconds which is very fast.
+
+2. Render Phase: Rendering is just about calling components functions, not about updating the screen.
+   At the beginnign React wil go thrue entire component tree, take all the component instances that
+   trigger the re-render and render them. This means to call the coresponding copmonent functions.
+   This will creat updated React Elelements that make the Virtual DOM.
+   The Virtual DOM is a tree of all React Elelements created from all instances in the Component tree.
+   Rendering a Component will couse all of tis child components to be re-rendered as well. This means that if you
+   update the highest component in the component tree, than the entire application will actually be re-rendered!!!
+   This means that just the Virtual DOM will be updated not the entire DOM.
+
+   Than comes the Reconciliation - this is the decision which DOM Elelements need to be inserted, deleted or updated
+   in order to  reflect the lates state changes!!! The reconciler is the engine of React, it allows us
+   to never touch the DOM directely and insted tell React what he sould do based on the state.
+   The Reconciler in React is called: Fiber !!!
+   Fiber takes the entire React Elelement tree(Virtual DOM) and based on it builds another tree -> Fiber Tree.
+   The Fiber Tree is a special enternal tree where each Component instance and DOM Elelement in the app
+   there is one so called fiber!!! Fiber are not recreated on every render!! The fiber tree is never destroyed!
+   Insted it's imutable Data structure. In the Fibres we keep sruck like the current Componet States, Props,
+   Side Effects, list of Used Hooks and more. The actual State and Props of any Component instance that we see on the screen
+   are internaly stored inside the coresponding Fiber in the Fiber Tree.
+   In the Fiber Pahse the rendering process can be split itno chunks, tasks can be prioritized and work can be pused,
+   resused or thrown away. Thsi happend automatically behind the sciens.
+
+   What Fiber does is going thrue the entire tree and analyses exactely what needs to change between the current
+   Fiber Tree and the updated Fiber Tree based on the new Virtual DOM. The process of comparing Elements step by step
+   based on their position in the Tree is called Diffing.
+   The resul fo the Reconciliation process is a second updated Fiber Tree + a list of DOM updates, that need to be performed
+   in the next Phase!!!
+
+3. Commit Phase and brouse Paint - The list of updates from the previous Phase will be used in the Commit Phase.
+    Here React finally writes ot the DOM, it inserts, deletes and updates DOM Elelements. React goes thrue the efect List
+    which was created int eh previous Pahse and applies them one by one toi the actual DOM Elements. Writing to the DOM 
+    happneds all in one go. After the Commit Pahse is completed, the Fiber Tree becomes the current Tree 
+    for the next render cicle. In the Commit Phase is a sepatrate Library that writes to the DOM and it is called
+    React DOM!!! React does the Render Phase but not the Commit Phase!!!
+
+4. Brouser Paint - Udated UI on the screen!!!
+
