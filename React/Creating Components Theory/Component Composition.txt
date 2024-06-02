@@ -1,0 +1,5 @@
+Component Composition is the technic of combining diffrent components using the children prop.
+
+We use compositions when we want to create hoghly reusable or flexible components.
+
+We use compositions in order to fix a prop drilling problem.

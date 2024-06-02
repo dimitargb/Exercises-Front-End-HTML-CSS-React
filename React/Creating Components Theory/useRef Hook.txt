@@ -1,0 +1,17 @@
+We use the use Ref Hook to create something called Ref.
+Ref is like a box in wich we can put any data that we want to be preserved between renders.
+When we use use Ref React will give us an object with a mutable curent property. And thean we can write
+ any data into this current property. And read from it.
+
+ 1. We can create variables that will stay the same between renders.
+ 2. We can select and store DOM elements.
+
+ Usually Ref only appear in eventhandlers or effects,but not in the JSX. We use Refs jsut for data
+ that should be only remembred by the Component over time, but never re-rendered!
+
+
+
+
+
+
+ 

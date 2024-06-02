@@ -1,0 +1,21 @@
+The idea is to give us a place where we can safe write side effects.
+
+Side effect is any interaction between a React component and the worls ouside that component.
+
+We need Side Effects all the time when we build React apps.
+Side Effects should not happend during the component render.
+We cna create Side Effects in 2 ways:
+
+1. In Event Handlers(triggred with onClick, onSubmit, ect). Sometimes only reacting to an event is not enough for 
+    some applications.
+
+2. By using useEffect() Hook(triggered by rendering). 
+    Effetcs allow us to write code, that will run in different moments(mount, re-render or unmount).
+
+Effects are only executed afetr the brouser has painted the component instance on the screen!
+Effects run synchronasly after the render has alreday been painted to the screen. The reason is becouse,
+effects may contain long running processes, such as fetching data. The effects do not run during render.
+
+But the layOutEffect runs before the beouser paint.
+We included the (query) variable in the depandancy array in the useEffect Hook.
+Our useEffect Hook is (query) is like an event handler that is listening on an event to change.

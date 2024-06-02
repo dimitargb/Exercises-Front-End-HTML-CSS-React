@@ -1,0 +1,15 @@
+React Hooks are special functions bulid into React wich allow us to hook into Reacts internal mechanisms, 
+such as creating and accsessing State form Fiber Tree, or registeribg sideeffects in the Fiber tree.
+Using the useStete of useEffect Hook we can hook into the internal mechanism.
+
+All Hooks start with the word use.
+We can create our own cumstom hooks, which also start with the word use!!!
+Custom Hooks give us an easy way of reusing a none-visiual logic(that is nto about the UI).
+
+Hooks have 2 main rules:
+
+1. They can be called only on the top level - We can not call hook inside conditions, loops
+    nested functions aor eraly return.
+
+2. Hooks can onlu be called from Reacr Functions -> They can obly be called form a function component 
+    or a custom hooks.

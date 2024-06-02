@@ -1,0 +1,8 @@
+Most of the Components will fall into one of the following 3 categories:
+
+1. Presentaional Components(Stateless Components)- no State, can recieve props. This a usually small Components
+   and reusable Componets such as Logo, NumResult, Movie in out app.
+
+2. Steful Components - this are Components that have State. They can be still reusable - Search Component in our app.
+
+3. Structural Components - this are pages, layouts or screens of the application. Thay can be big and not reusable.

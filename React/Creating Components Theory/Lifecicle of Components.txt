@@ -1,0 +1,14 @@
+Lifecicle of a Component instance.
+
+The Lifecicle of a component has diffrent phases that a specific components goes true:
+
+1. Phase in any component lifecicle is: Mount/ Initial Render -> this is when the Component is rendered for first time.
+   Also here are created fresh State and Props for Co# instance.
+
+2. Phase in any component lifecicle is: Re-Render of a component for unlimited times. A React Application 
+    is re-rendered whenever there is a State update. The Component also will be re-rendered when the prpop
+    that it recieves change, whan it parent-component re-renders or when context changes.
+    The re-render Phase is optional, it doesn't always happend in all components.
+
+3. Phase in any component lifecicle is: Unmounted(Component instance is unmounted), when there is no more need of this
+    component instance. In this Phase the Component instance is completely destroyed and removed from the screen.

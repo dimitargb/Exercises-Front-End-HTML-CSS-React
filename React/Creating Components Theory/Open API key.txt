@@ -1,0 +1,3 @@
+1f7ed009
+
+Send all request to: http://www.omdbapi.com/?apikey=[1f7ed009]&

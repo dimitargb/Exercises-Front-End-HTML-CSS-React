@@ -1,0 +1,24 @@
+This is a cleanUp Function from the Effect!!! In our application this is a function that sets the title in our Application
+back to the default one - usePopcorn.
+
+The Clean UP Function is a function that we can return from an effect(optional)
+This function will run on 2 occasions:
+ 1. Before the effect is executed again.
+ 2. After a component instance has unmounted.
+
+We need the Clean up function whenever the side effect keeps happenign after the component has re-rendered or unmounted!
+
+Each effect should only do one thing!!!
+So if you need to create multiple effects in your components, use mulitple useEffect hooks.
+
+useEffect(
+    function () {
+      if (!title) return;
+      document.title = `Movie | ${title}`;
+
+      return function () {
+        document.title = "usePopcorn"; -> this is a CleanUp Function
+      };
+    },
+    [title]
+  );
