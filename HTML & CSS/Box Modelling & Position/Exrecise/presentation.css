@@ -1,0 +1,9 @@
+.slide {
+    width: 100vw;/*80 viewport width*/
+    height: 100vh;/*80 viewport hight*/
+}
+
+.slide [class^="ar-"] /* class който зпочва ^ с ="ar-" */{
+    max-width: 30em;
+    margin: 0 auto;
+}

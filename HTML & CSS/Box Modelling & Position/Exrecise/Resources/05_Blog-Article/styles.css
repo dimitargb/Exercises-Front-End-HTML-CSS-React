@@ -1,0 +1,38 @@
+body {
+    background-color:  #02475e;
+}
+
+h2 {
+    font-size: 32px;
+    color: #fefecc;
+    margin: 12px;
+    text-align: center;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    line-height: 24px;
+    padding: 10px;
+    text-indent: 30px;
+}
+
+div {
+    margin-bottom: 30px;
+    border-top: 2px solid #fff;
+    position: relative;
+    top: 20px;
+}
+
+span {
+    width: 140px;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding-block: 3px;
+    padding-inline: 5px;
+    margin-block: 0;
+    margin-inline: auto;
+    position: relative;
+    top: -11px;
+    background-color: #fff;
+}

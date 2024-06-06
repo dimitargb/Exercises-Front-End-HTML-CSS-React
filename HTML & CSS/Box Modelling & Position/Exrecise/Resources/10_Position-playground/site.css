@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+}
+
+.container:nth-child(1) {
+    background: linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);;
+}
+
+.container:nth-child(2) {
+    background: linear-gradient(0deg, rgba(195,123,34,1) 1%, rgba(253,191,45,0.7232142857142857) 38%);;
+}
+
+.card {
+    width: 10em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.3em;
+    overflow: hidden;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card .inner-shadow {
+    display: block;
+    background:rgb(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.5) inset;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+.card:hover .inner-shadow {
+    opacity: 0;
+}
