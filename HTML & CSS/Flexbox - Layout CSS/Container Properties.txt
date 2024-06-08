@@ -1,0 +1,68 @@
+Flex Conatiner Properies:
+
+.box {
+  display: flex;
+}
+
+Properties:
+
+1. flex-direction:
+
+Подредба по ред от ляво на дясно:
+.box {
+  flex-direction: row; - елементите ще се подреждат от ляво на дясно.
+  flex-direction: row-reverse; - елементите ще се подреждат от дясно на ляво.
+  flex-direction: column; - елементите ще се подреждат от горе на надолу.
+  flex-direction: column-reverse; - елементите ще се подреждат от долу на нагоре.
+}
+
+2. flex-wrap:
+
+Събира елементите в един контейнер:
+
+.box {
+  flex-wrap: wrap;
+}
+
+3. justify-content: Horizontal alignment
+
+Това е за разпредеяне на пространството между елементите в контейнера по хоризонтала.
+
+.box {
+  justify-content: center; - центриране на елементите в центъра на котейнера.
+  justify-content: felx-start; - поставяне на елементите от началото на лявата старна на котейнера.
+  justify-content: felx-end; - поставяне на елементите накрая от дясната старна на котейнера.
+  justify-content: space-around; - поставяне на елементите така, че да има място около тях.
+  justify-content: space-between; - поставяне на елементите така, че да има място между тях.
+}
+
+4. align-items: Vertical alignment
+  
+Това е за разпредеяне на елементите po вертикала в контейнера.
+
+.box {
+  align-items: stretch; - flexbox ще разпъне елементите по височина в контейнера.
+  align-items: flex-start; - flexbox ще нареди елементите отгоре в контейнера.
+  align-items: flex-end; - flexbox ще нареди елементите отдолу в контейнера.
+  align-items: center; - flexbox ще нареди елементите в центъра в контейнера.
+}
+
+5.  align-content: Vertical alignment
+
+Това е за разпредеяне на елементите po вертикала в контейнера.
+
+.box {
+  align-content: start; 
+  align-content: center ;
+  align-content: space-between;
+  align-content: space-around; 
+  align-content: flex-start; 
+  align-content: flex-end; 
+}
+
+
+6. gap: - браузера да сложи простратнство около всеки един flex item.
+
+.box {
+  gap: 2em; - това означва простарнство от 2em отгоре, отдолу, отляво и дясно.
+}

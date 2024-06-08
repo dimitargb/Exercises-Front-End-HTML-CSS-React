@@ -1,0 +1,44 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+.site {
+    border: 2px solid red;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+   /* gap: 2em;*/
+  /* min-height: 100vh;*/
+   /*align-items: flex-start;
+   align-content: flex-start;*/
+}
+
+p {
+    margin: 0;
+}
+ 
+.site > * {  /* знака > означава само децата на .site */
+    border: 2px solid green;
+    padding: 2em;
+}
+
+.site-header {
+    flex-basis: 100%;
+}
+
+.site-content {
+    flex-grow: 2;
+}
+
+.site-sitebar {
+    flex-grow: 1;
+}
+
+.site-footer {
+    flex-basis: 100%;
+    margin-top: auto;
+}

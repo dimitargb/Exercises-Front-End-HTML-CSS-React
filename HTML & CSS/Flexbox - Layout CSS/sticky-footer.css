@@ -1,0 +1,43 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+.site {
+    border: 2px solid red;
+    padding: 2em;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+p {
+    margin: 0;
+}
+ 
+.site [class^="site-"] {  /* ^ знака  означава всички.site */
+    border: 2px solid green;
+    padding: 2em;
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+}
+
+.main main {
+    flex-grow: 2;
+    flex-basis: 66%;
+}
+
+.main aside {
+    flex-grow: 1;
+    flex-basis: 33%;
+}
+
+.site-footer {
+    margin-top: auto;
+}

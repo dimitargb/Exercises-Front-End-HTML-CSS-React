@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 2em;
+}
+
+.container {
+   /* height: 80vh;*/ /* 80%vh - visual hight от екрана */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+    border: 4px solid red;
+    margin-bottom: 2em;
+}
+
+.item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    border: 2px solid green;
+    font-size: 2em;
+}
+
+.container.columns {
+    flex-wrap: nowrap;
+}
+
+.container.columns .item:nth-child(1) {flex-grow: 2;}
+.container.columns .item:nth-child(2) {flex-grow: 1;}

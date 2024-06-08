@@ -1,0 +1,25 @@
+Properties:
+
+1. order - с това property можем да сменим визуалната подредба на елементите.
+
+.box {
+  order: 1;
+}
+
+2. flex-grow - Flexible sizing of flex items - позволява да расте елемента.
+
+.box {
+  flex-grow: 1; 1 - означава че може да го разпъне
+}
+
+3. flex-shrink - позволява елемента да се смалява.
+
+.box {
+  flex-shrink: 1; 1 - означава че може да го разпъне
+}
+
+4. flex-basis - това е еквивалента на width в flexbox.
+
+.box {
+  flex-basis: 20em; - това е width 20em.
+}
