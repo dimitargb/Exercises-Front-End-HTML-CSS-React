@@ -1,0 +1,29 @@
+When we use Routing we match diffrent URL to diffrent Views in User intrface.
+In React we match each URL to a specific React Component.
+This enables users to navigate between diffrent screens of the Application by using links and URL in the brouser.
+This keeps the UI in sync with the current brouser URL.
+This only works this way on the client side.
+
+In React routing is usually handeled by the package RactRouter.
+This is the most important and mosed used React Third party Library out there.
+
+Routing is fundametnal to build SPA(Single Page Applications).
+The SPA are Applications executed entierly on the client(only in the users web-brouser).
+Whenever a user clicks om a special link provided by the router the URL in the brouser simply chanages.
+In React this job is done by ReactRouter.
+Changing the URL will trigger the DOM to be updated as a result. In SPA javascript will udate the DOM and page.
+Which means there will be never a complete page reload.
+The entire App in just one page, without any realoads.
+
+Whenever the URL is changed ReactRouter and React itself will update the DOM by simply rendering the Component that
+corresponds to the new URL. The whole cilce can be repated as many times as necessary, all without reloading the page!!!
+
+When we want to create a react routin we open new Terminal.
+
+npm i react-router-dom@6 We define our Routs in a declatirve ways.
+-> import { BrouserRouter } from "react-router-dom";
+
+function App() {
+  return <BrouserRouter>
+  </BrouserRouter>;
+}
