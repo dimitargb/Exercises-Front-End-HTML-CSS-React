@@ -1,0 +1,19 @@
+1. Placing Sate in the URL is an easy way to store Sate in the Global place, that is easyly accessible from all components.
+   If we place Sate in the URL we can easyely read a value from there. So basically we can move some 
+   State Managment from React to URL.
+2. Placing State in the URL is a good way to pass data from one page into the next page, without having to store taht 
+   data in some temporaly place.
+
+3. Placing State in the URL makes it possible to bookmark and share the page with the exact UI state it
+   had at that time.
+
+   For storing State in the URL we use params or query string!!!
+   Params is very useful to pass data to the next page, while the qerry string is usefull to store some
+   global state that should be acessable very where.
+
+   To use Params with React Raouter we do it in 3 steps: 1. We create a new Route, 2. We link to that Route
+   and 3. in thet Route we read the State from the URL.
+
+   <Route path="cities/:id" element={<City />} />
+   on the CityItem component -> <Link className={styles.cityItem} to={`${id}`}>
+   Then we use useParams() hook on City Item

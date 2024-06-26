@@ -1,0 +1,33 @@
+Context API gives a solution to prop drilling.
+
+Context API is a system to pass data trought the application, without menually pass props down the component tree.
+1. The first part ot the Context API is the Provider.
+
+2.Provider gives the all child components access to a Value. It can be anywhere ont he component tree but is common to
+place it at the top.
+This value is the data that we want to make available thrue the Provider.
+So we pass this value into the Provider.
+3.Finally we have Consumers which are all the components that read the value that we passed into the Provider.
+
+But what happends when the value gets updated and chanages. Whenever the Context value is updated, all Consumers will be
+re-rendered as long as that component is subscribed to that exact Context!!!
+
+1. We create a new Context:
+  createContext() - function part of React; We can pass in a default value for this context, but we usually never do that.
+  Because that value can not change over time. Intead we usually pass null or leave it empty!!!
+
+  const PostContext = createContext() -> PostContext is a Component;
+  Now we can pass the value into the Context Proider.
+
+  After this <PostContext.Provider> - Now we need to pass the value into this Provider!!!
+  <PostContext.Provider value={{}}> in the value we need an object which will contain al the data taht we want to make
+  accessable to the child Components !!!
+
+    <PostContext.Provider value={{
+      posts: searchedPosts,
+      onAddPost: handleAddPost,
+      onClearPosts: handleClearPosts,
+      searchQuery,
+      setSearchQuery,
+      }}>
+Now lets consume the Context value in multiple Components and get rid of all the annoying props!!!

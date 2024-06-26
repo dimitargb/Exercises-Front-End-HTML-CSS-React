@@ -1,0 +1,9 @@
+We need nested Routs when we want part of the UI to be controlled by a part of the URL.
+In the Nested Routes we show a part of the UI, based on some part of the URL.
+
+Exsample: -> localhost:3000/app/cities it will show the cities or localhost:3000/app/form will show a form to submit.
+
+We can do that with index Rout.
+The index Rout is the default child Rout, that will match if the other Routs do not match!!!
+
+We use <Outlet/> Element to show the children path ont an Route.
