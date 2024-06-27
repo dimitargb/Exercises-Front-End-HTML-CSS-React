@@ -1,0 +1,37 @@
+State Management is like giving each pice of State the right home.
+
+Types of State:
+
+1. State Accessability -> State can be either Global or Local State.
+
+    Local State is needed onlyu by one or view Components.
+    Global State might be needed by many Components.
+    Local State is only accessible inside the component that it was difined and it's child Components.
+    Global State can be made accessible to every single Component in the application.
+
+
+2. State Domain -> We can classify each state as either Remote State or UI State.
+
+    Remote State is all application data that is loaded from a remote server(API).
+    UI State is everything else(Curently selected Theme, applied filters, form inputs, ect.).
+    All the state that we are not fetching from exetrnal API is UI State.
+    UI State is synchronous and stored into the application and does not interract with any servers at all.
+
+Where to place State:
+
+1. If we need a local State we place it in the Local Component -> useState, useReducer, useRef!!!
+2. If we need a State in mulitple related Component we use Parent Component -> useState, useReducer, useRef we lift up State.
+3. If we need a Gloabal State we use Context API + useState or useReducer. Context API is best used to manage UI State.
+4. If we need to manage Remote State in complex application
+    we can use 3th party State Management Libraries(Redux, React Query,SWR, Zustand, ect).
+5. URL - we can store global State easely sherable and passed between pages we use React Router.
+6. Sometimes we need to store data inside the users Brouser and we use localStorage, session storage, ect.
+    This State will not re-render any Component, but is still technically application State.
+
+How to manage the differnet types of state in practice(what tools to use for the differnet kind of State):
+
+1. Local UI State -> useState, useReducer, useRef
+2. Local Remote State -> fectch + useEffect + useState/useReducer
+3. Global UI State -> Context API + useState or useReducer or 3-th party Libraries(Redux, React Query,SWR, Zustand, ect)
+4. Global Remote State -> Context API + useState or useReducer, Redux,Zustand or React Query, SWR, RTK Query(recommended).
+
