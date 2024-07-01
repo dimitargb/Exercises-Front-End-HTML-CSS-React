@@ -1,0 +1,7 @@
+With the Profile Developer Tool we can analyze renders and re-renders. 
+
+In the Profiler tool we need to go to settings, press
+the blue circle Start Profiling. Than when we stop recording diffrent colors apprear. The gary comoiments are the ones that
+did actually not render while the application rerenders, when for exsample we type somethig in  post search. In our case
+Main, Post and App did not renrender. The more yellow the color is the longer it took to re-render. The Post Rprovider took 
+the longest.

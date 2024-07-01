@@ -1,0 +1,21 @@
+1. Prevent waisted Renders.
+we can use - memo, useMemmo and callBack Hook.
+we can pass elements into other elemnts as children or a normal prob in order to prevent them of beeing re-rendered.
+
+In React a component instance onaly gets re-rendered in 3 diffrent situations:
+
+a. When the component State changes!
+b. When there is a change in the context that the component is subscribed too!
+c. When Parent Component is re-rendering!
+
+Rendering a compoment does not mean that the DOM actually get updated.
+
+A waisted Render is a render that did not produce any change in the DOM.
+
+2. Improve overall application speed and responsivnes.
+ to imrove the spped we can use we - useMemmo, callBack Hook and useTransition.
+
+
+3. Reduce the bundle size.
+  We can reduce the bundle sixe by using fewer 3-th party packages
+  We can implement code splitting and lazy loading.
