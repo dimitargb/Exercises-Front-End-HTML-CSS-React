@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 Verdana, sans-serif;
+}
+
+body {
+    padding: 5em;
+}
+
+header {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: flex;
+    padding-bottom: 1.5em;
+    justify-content: space-between;
+}
+
+
+
+main {
+    padding-top: 1.5em;
+}
+
+h2 {
+    font-family: Georgia,  serif;
+    padding-bottom: 0.5em;
+}
+
+p {
+    padding-bottom: 1.5em;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5em;
+}
+
+nav ul li {
+    display: block;
+    list-style: none outside;
+}
+
+nav a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
