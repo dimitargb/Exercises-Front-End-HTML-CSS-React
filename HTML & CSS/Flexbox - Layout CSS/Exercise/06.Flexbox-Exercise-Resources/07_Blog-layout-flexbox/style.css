@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    padding: 2em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Georgia, serif;
+    
+}
+
+p {
+    padding-bottom: 1.5em;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 45em;
+    margin: 4em auto;
+    gap: 4em;
+}
+
+.page > header {
+    border-bottom: 2px solid black;
+    flex: 1 1 100%;
+    padding-bottom: 2em;
+   
+}
+
+.page > main {
+    flex: 1 1 65%;
+    /* - това означава - flex-grow: 1;
+                         flex-shrink: 1;
+                        flex-basis: 70%;*/
+}
+
+.page > aside {
+    flex: 1 1 25%;
+    /* - това означава - flex-grow: 1;
+                         flex-shrink: 1;
+                        flex-basis: 25%;*/
+}
+
+blockquote {
+    font-family: Georgia, serif;
+}
+
+aside a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+.align-right {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+.align-left {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+img[class*="align"] {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5em;
+    border: 6px solid black;
+    box-shadow: 0 0 1em 0.2em rgba(0, 0, 0, 0.3);
+}
