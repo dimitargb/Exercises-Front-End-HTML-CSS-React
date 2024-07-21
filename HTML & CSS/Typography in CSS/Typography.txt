@@ -1,0 +1,60 @@
+Типография в наука която се занимава с подреждането и оформянето и стилизирането на текст.
+
+Базови правила:
+
+1. - measure - или колко ни е дълъг един ред - колко букви има на един ред.
+     Правилото е между 45 и 75 букви на един ред.
+     Идеалния ред е около 66 букви.
+
+2.- leading(ledding) - разтояние между редовете в един праграф примерно.
+     Контролира е через line-hight !!!
+
+3. - Font-Familly(typeface) - различни стилове на визуализация и различни шрифтове.
+
+Основни Generic font-family - или какъв тип шрифт искаме да използваме:
+
+serif 
+sans-serif - печатна форма без serif.
+monospace - всяка буква заема еднакво пространство в стараницата.
+cursive - ръкописно
+fantasy - 
+
+Важно за да се копира автоматично параграф от текс Sfift + Alt + долна стрелака!!!
+
+За центритане - margin: 0 auto; в CSS file
+padding - разтояние отвътре - е в зелено при inspect
+margin - разтояние отвън - е в оранжаво при inspect
+
+CSS - Units - EM  and REM
+EM - относителн стойност към текущия font-size!!!
+
+CSS Properties:
+
+1. - color & background:
+          ▪ color - за цвят на текста;
+          ▪ background - за цвят на фона;
+2. - text: 
+          ▪ text-align: left;
+          ▪ text-decoration: underline;
+          ▪ text-indent: преместване на текста в ляво лили в дясно - 5em;
+          ▪ text-overflow: когато няма повече място за текста в нашата кутийка - ellipsis;
+          ▪ text-shadow: 0 0 5px #000;
+3. - font: 
+          ▪ font-family: Arial, sans-serif;
+          ▪ font-size: 2em;
+          ▪ font-style: italic;
+          ▪ font-weight: 700(bold);
+          ▪ line-height: 1.5;
+
+ <blockquote> - цитат
+ blockquote:before - псевдо елемент;
+ blockquote, p:last-child - псевдо селектор;
+
+ p + p {} = това означава за всички параграфи пред които има друг параграф.
+
+ for +/shift 6;
+ [for^="Sa"] - attribute selector - селектира всички елементи с for attribute и той започва с "Sa".
+ [for$="ato"] - attribute selector - селектира всички елементи с for attribute и той завършва с "ato".
+ [for*="obb"] - attribute selector - селектира всички елементи с for attribute в които се съдържа с "obb".
+
+ Упражнения в интернет със CSS селектори - https://flukeout.github.io/
