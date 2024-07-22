@@ -1,0 +1,27 @@
+Redux is a third party Library where we can manage global state in a web application.
+We can connect it using the react-redux library.
+The big idea usin Redux is that all the global state in the application can be stored in thei one globaly accecibale store,
+which we can then update using actions(like the useReducer hook), updating state by dispatching actions.
+
+In Redux as soon we update the store, all the React Components that consume some data from the store will be re-rendered!!
+
+Today there are 2 diffrent vaersions of writing Redux:
+1. Classic Redux
+2. Modern Redux Toolkit
+
+When to use Redux?
+
+Use a golbal state managment Library like Redux, only when you have lots of non remote  global UI
+ state(useState, useReducer, Context API) that needs to update frequently!!!
+
+In Redux we despatch actions to the store, not to the reducer like in the userReducer Hook. The store is a centralized 
+container where all global state lives. The store is where one or mulitple reducers live. Each reducer must be
+a pure function that a task of calculating the next state, based on the action despatched to the store and the current state
+taht is alreday in the store as well.
+There are mulitple reducers becaouse we should create one reducer per application feature or per data domain in roder to
+keep things separated.
+
+In real word when we use Redux we use functions called Action creator in order to automate the process of writing actions.
+Insted of writing this actions objects by hand we create functions that do that automatically.
+
+The purpose is to make the state update logic separate from the rest of the application.
