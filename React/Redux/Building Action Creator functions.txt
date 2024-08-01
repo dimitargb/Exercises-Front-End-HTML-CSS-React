@@ -1,0 +1,3 @@
+Those are functions that return actions!!!
+
+We will create one action creater for each possible action in the redux-intro application.
