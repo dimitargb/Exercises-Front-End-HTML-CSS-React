@@ -1,0 +1,25 @@
+To connect Redux store with React application we need to install onother package.
+
+npm i react-redux
+
+Only true this react-redux package can Redux and React application be connected.
+We need to import from react-redux package the Provider in index.js
+
+And now we can wrap our entire application in that provider.
+And here we need to pass the store prop.
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+  <Provider store={store}>
+    <App />
+  </Provider>
+  </React.StrictMode>
+);
+
+Now we have successfuly connected Redux with React!
+
+In order to read to read data from Redux store we need to use useSelector Hook provider by Redux.
+This useSelector Hook is a callback function that uses store.
+
+In React we get access to the dispatch function by using the useDispatch Hook.
