@@ -1,0 +1,8 @@
+1. We need to insall the Google Chrome extension(Redux DevTools).
+2. Than we need to install thr corresponding npm pakcage.
+   npm i redux-devtools-extension
+   npm install --save @redux-devtools/extension
+
+   This package brings us a function that we need to use.
+
+   Than open dev tools and go Redux.
