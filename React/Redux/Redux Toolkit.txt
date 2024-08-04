@@ -1,0 +1,29 @@
+The modern way of writing Redux is Redux Toolkit.
+Redux Toolkit allows us to write a lot less code to achieve the best results.
+
+1. Allows us to write code taht mutetes state inside reducers.
+2. Redux Toolkit automatically creats action creaters from our reducers.
+3. Redux Toolkit will automatically setup middlewear and Redux DevTools.
+
+First we need to intall Redux Toolkit:
+npm i @reduxjs/toolkit
+
+Now we use the configureStore method intead the createStore in the store.
+
+import { configureStore } from '@reduxjs/toolkit';
+
+The configureStore function wrapps around createStore and adds a few functionalities to it.
+It will aotomtically combine our Reducers, it will automatically add the thunk middlewear and set up the Dev Tools.
+
+const store = configureStore({
+    reducer: {
+        account: accountReducer,
+        customer: customerReducer,
+    }
+})
+
+Another function we can import form Redux Toolkit is createSlice();
+import { createSlice } from "@reduxjs/toolkit";
+createSlice() Function gives us 3 benefits:
+1. It will automatically create action creators from our Reducers.
+2. We can mutate our state inside Reducers( this is the biggest advantage of using Redux Toolkit).
