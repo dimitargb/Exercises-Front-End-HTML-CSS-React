@@ -1,0 +1,6 @@
+1. We dont worry about naming classes.
+2. You dont have to jump between files all the time.
+3. You will immediately understand the styling of any project that uses Tailwind.
+4. Tailwind is a desing system with very good predifined collors, fonesizes, spacing and more.
+5. This saves a lot of time, also responsive design is very easy and fast to implement as well.
+6. Tailwind's documentation is world class and integration in VS code and auto-complition in all calsses.
