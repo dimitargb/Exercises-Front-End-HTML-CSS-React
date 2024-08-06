@@ -1,0 +1,25 @@
+To add margin we write mb(margin-buttom)
+
+margin-bottom -> mb-px
+
+margit-top and margin-bottom -> my-10(margit-top and margin-bottom)
+
+padding x-direction(to left and right side) -> px-4;
+padding y- direction(to the top and bottom) -> py;
+
+adding a border -> first we write border and then the direction(b-bottom, t-top,l-left, r-right, x and y )
+border-b-8 -> border bottom 8px;
+
+border-color -> border-green-500;
+
+p-4 -> means padding-4 in all directions.
+
+If we want a space in some elements <span>23 pizzas</span>, <span>$23.45</span> on the parent we simply use space than the
+direction x for horizontal and y for vertical and the amount again:
+
+ <p className="font-semibold text-stone-300 space-x-4">
+                <span>23 pizzas</span>
+                <span>$23.45</span>
+</p>
+                
+Dispaly proerty -> 
