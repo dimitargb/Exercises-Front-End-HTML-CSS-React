@@ -1,0 +1,20 @@
+We want to set up a grid that contains 3 rows from the layout.
+One row is for the Header.
+Let make this a grid cointainer. In order to make a grid cointainer we use the grid class -> className="grid";
+
+hight is h and value-> h-3
+
+div className="grid h-[500px] bg-red-500 grid-rows-3"> (grid-rows-3)->разделяме на три реда 
+
+grid-cols-2 -> 2 колони.
+gap-4
+
+grid h-screen -> will take the entire hight of the view Port : 
+
+<div className="grid h-screen grid-rows-[auto_1fr_auto]">
+
+In order to scroll corectely even in smaller screens in Tailwind we use -> <main className="overflow-scroll">
+This sets the overflow proerty to scroll, which means if there is now enough space it will force us to scroll.
+
+We need to give the container a certain width-w.
+In situations in which we want a fluid design we should always use max-width.
