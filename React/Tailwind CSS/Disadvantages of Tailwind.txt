@@ -1,0 +1,5 @@
+1. The markup of HTML and CSS will look ugly.
+2. Another problem is that you need to learn all the tailwind classes that they provide, or at least the once that you
+    need the most.
+3. You need to install and set up Tailwind on each new Project.
+4. You a are kind og giving up om vanilla CSS.
