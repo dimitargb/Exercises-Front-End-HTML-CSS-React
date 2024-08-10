@@ -1,0 +1,29 @@
+we go to tailwind.config.js and type:
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    fontFamily: {
+      sans: "Roboto Mono, monospace",
+    },
+
+    extend: {
+      colors: {
+        pizza: '#123456',
+      },
+      height: {
+        screen: '100dvh',
+      },
+    },
+  },
+  plugins: [],
+};
+
+screen: '100dvh' -> dynamic vieport hight unit.
+we also need to type the following link in the html file: This will be the anly font the way it is written.
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
