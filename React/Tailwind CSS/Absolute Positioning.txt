@@ -1,0 +1,18 @@
+The idea is to format our Loader.jsx Element in the Fast React Pizza App.
+
+To position an Element absolutely we need to use the absolut class.
+
+
+function Loader() {
+    return (
+        <div className="absolute inset-0 bg-slate-200/20
+        backdrop-blur-sm flex items-center justify-center">
+            <div className="loader"></div>
+        </div>
+    )
+}
+
+export default Loader
+
+inset-0 takes the whole page of the screen. The 200/20 is teh opasity.
+backdrop-blur-sm - това е замъгляване на картината.
