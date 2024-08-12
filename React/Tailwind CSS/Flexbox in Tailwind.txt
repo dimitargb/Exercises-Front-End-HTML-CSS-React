@@ -1,0 +1,5 @@
+To diclare something as a flexContainer we use flex.
+flex -> display flex.
+
+vertically allign items (allign items center) for Tailwind is -> items-center;
+If we want space between text or itesm we do space between for Tailwind -> justify-between
