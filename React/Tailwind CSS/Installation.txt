@@ -1,0 +1,31 @@
+Install Tailwind CSS with Vite
+
+Tailwind/installation/framework-guides - then vite
+
+Open up a new Terminal and write:
+1. npm install -D tailwindcss@3 postcss autoprefixer - в случея използваме версия 3, но може и само tailwindcss
+2. npx tailwindcss init -p
+3. Than in tailwind.config.js we need to put in the array following code:
+    export default {
+    content: [
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
+    }
+4. Than add to index.css on the top -> 
+    @import "tailwindcss/base";
+    @import "tailwindcss/components";
+    @import "tailwindcss/utilities";
+
+There are 2 more things we need to do:
+1. intsall vscode extention; type tailwind in the search bar in VS code and install Tailwind SCC InteliSense.
+
+2. finally we need to install a special tailwind prettier extension.
+   Copy this - npm install -D prettier prettier-plugin-tailwindcss 
+   open new terminal and paste it.
+
+   This will automatically sort the order of the classNames in a way that tailwind recommends it.
