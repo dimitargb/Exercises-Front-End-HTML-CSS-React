@@ -1,0 +1,24 @@
+Let start using our cart State by adding new pizzas to the cart.
+We go to the Menuitem Element we create a onClick={handleAddToCart} on a button.
+We add this onClick to our Button as prop.
+
+Than we go back to the Menuitem and we create the function handleAddToCart();
+
+  function handleAddToCart() {
+    const dispatch = useDispatch()
+       const newItem = {
+        pizzaId: id,
+        name,
+        quantity: 1,
+        unitPrice,
+        totalPrice: unitPrice * 1,
+       }
+       dispatch(addItem)
+    }
+
+And now we need to dispatch an action in the handleAddToCart() function.
+
+
+const dispatch = useDispatch() we use the useDispatch() hook;
+Than we can dispatch actions from the handleAddToCart() finction and this dispatch will work by callinf the 
+addItem actionCreator from the cartSlice.js file -> dispatch(addItem(newItem)) and inside we pass in the newItem.
