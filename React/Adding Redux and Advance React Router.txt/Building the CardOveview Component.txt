@@ -1,0 +1,20 @@
+Basically we need to select the Cart State and form there compute the number of pizzas that are in the cart and the
+total prize.
+So to read State from the Redux store, we use the useSelector() hook. Inside the hook we pass a selectorFunction,
+that's why it is called the selector.
+This is the function:  
+const totalCartQuantity = useSelector((state=>state.cart.cart.reduce((sum, item)=>sum + item.quantity , 0)));
+We pass it not in the CartOverview bit in the cartSclice.js file.
+
+export const getTotalCardQuantity = (state) =>state.cart.cart.reduce((sum, item)=>sum + item.quantity , 0);
+and than in CartOverview -> const totalCartQuantity = useSelector(getTotalCardQuantity);
+
+For the next function - getToalCardPrice we write another function in cartSclice.js file.
+export const getTotalCardPrice = (state) =>state.cart.cart.reduce((sum, item)=>sum + item.totalPrice , 0);
+
+Than in in CartOverview -> const totalCartPrice = useSelector(getTotalCardPrice);
+
+Than in   bouth spans we write:
+
+<span>{totalCartQuantity}</span>
+<span>{formatCurrency(totalCartPrice)}</span>
