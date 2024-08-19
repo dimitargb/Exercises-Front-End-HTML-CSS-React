@@ -1,0 +1,16 @@
+We open the Cart.jsx page and we want to replace the fakeCart, with the cart comint grom Redux store.
+instead of const cart = fakeCart ->  const cart = useSelector() and in the brakets lets write a selector function and 
+place it in the cartSlice.js file.
+The function in the cartSlice.js file is:
+export const getCart = (state)=> state.cart.cart;
+
+so in the Cart.jsx we write -> const cart = useSelector(getCart);
+
+Now we need to handle the Clear Button. What we need to do to specify in the button onClick{} prop and dispatch
+the clear cart action from cartSlice.js
+So we write out dispatch function in the Cart.jsx
+const dispatch = useDispatch();
+
+<Button type='secondary' onClick={()=>dispatch(clearCart())}>Clear cart</Button>
+
+And now it should be working.
