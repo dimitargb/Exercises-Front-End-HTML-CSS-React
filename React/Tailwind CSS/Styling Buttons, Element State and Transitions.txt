@@ -1,0 +1,20 @@
+element State such as: hover, disabled or focus.
+
+Hover state in Tailwind and link color:
+Add className to Link ot the Cart element:
+
+className='text-sm' -> make the text smaller;
+text-blue-500 -> make text blue;
+hover:text-blue-600 -> impelemnting hover with blue color;
+
+Now to style the order Button in the CreateOrder Element:
+
+<button disabled={isSubmitting} className="bg-yellow-400 uppercase font-semibold text-stone-800
+                    py-3 px-4 inline-block tracking-wide rounded-full">
+
+rounded-full -> button will be roundet on each side
+tracking-wide -> space between letters
+
+focus:ring -> is a shdow that they will place auside the element.
+
+Disabled sate -> disabled:cursor-not-allowed(there is no cursor is the button is disabled)
