@@ -1,0 +1,14 @@
+When we want to style the whole body from index.html we use class instead of className.
+
+Font- size -> text-xs (text extra small);
+            -> text-sm (text small);
+            -> text-base(text base);
+Font Weight -> font-thin;
+            -> font-extralight;
+            -> font-normal;
+Uppercase -> uppercase;
+
+Letter Spacing -> tracking-tighter;
+                -> tracking-normal;
+                -> tracking-wider;
+                -> tracking-widest
