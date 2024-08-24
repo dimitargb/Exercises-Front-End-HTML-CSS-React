@@ -1,0 +1,17 @@
+There is a very handy class in Tailwind that we can use to separate lements on a page.
+This class is called the divide class.
+It will place a line between all the child elements in the menu.
+
+function Menu() {
+    const menu = useLoaderData()
+
+    return (
+        <ul>
+            {menu.map((pizza) => (
+                <MenuItem pizza={pizza} key={pizza.id} />
+            ))}
+        </ul>
+    )
+}
+
+className="divide-y " -> divide and the direction y(vertical)
