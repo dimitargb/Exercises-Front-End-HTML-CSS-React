@@ -1,0 +1,15 @@
+in index.css type:
+
+Here we can create some new classes:
+
+
+    @layer components {
+    .input{
+        @apply rounded-full border
+        border-stone-200 px-4 py-2 text-xs transition-all duration-300 placeholder:text-stone-400
+        focus:outline-none focus: ring focus:ring-yellow-400 w-full mb:px-6 md:py-3"
+      }
+  }
+
+
+after @apply we paste all the classes from input CreateOrder Adress and replace it with the input.
