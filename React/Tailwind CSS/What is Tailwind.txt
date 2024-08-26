@@ -1,0 +1,8 @@
+Tailwind is a utility first Framework packed with utility classes like flex, text-center and rotate 90 
+that can be composed to build any design directly in your markup(HTML or jsx).
+
+When we write a utility first CSS(atomic SCC) we write lots and lots of tiny classes, where each class has one single purpuse
+and we then combine this classes to build entire components and lyaouts.
+
+In tailwind all this tiny classes are alreday written for us ready to be used.
+
