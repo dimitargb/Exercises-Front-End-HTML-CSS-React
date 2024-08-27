@@ -1,0 +1,32 @@
+Memoization - Is a optimization technique that eqecutes a pure function once and stores the results in the memory.
+              If we later try to execute the same function again wit the same inputs it will retunr the result 
+              that was previously stored in the mamory(cache). So the function will not be executed againg!!!
+              In React we can use this technique to optimize our applications.
+
+How to memoize Components using the memo function.
+
+React contains a memo function. With this function we can create Components that will not re-render when it's parents
+re-render, as long as the props stay the same between renders.
+We use memo function to create a memoized Components.
+
+Momoazing a Component really only effects props, this meanns that momoized Component will still re-render, whenever
+it's own State changes ot whenevr there is a change in the context in which the Component is subscribed to.
+
+Momo is only usefull when we dealing with a heavy Component, Component that creates a visible lag or a delay 
+when it's rendered.
+
+If we memoize a Component, but then give it an object or function as probs,the Component will always re-render anyway.
+The solution is to memoizing the functions and objects as well in order the memo to work.
+
+To do that React gives us  2 more Hooks - useMemo and useCallback.
+We can use useMemo() to memoize values and useCallback() to memoize functions between renders.
+
+Whatever value we pass into useMoemo() or useCallback() will basically be stored in memory and that cahced value 
+will than be returned in future re-renders as long as the inputs stay the same.
+This inputs in useMoemo() or useCallback() are called dependacies. So useMoemo() and useCallback() have a depandancy array.
+
+If the dependacies in the depandancy array dont change we have a memoization, if they change we can not memoize them.
+
+We need to make the objects or functions stable in order to mame the memo function work.
+
+useMoemo() just stores a result, like the value which is the result of the callBack.
