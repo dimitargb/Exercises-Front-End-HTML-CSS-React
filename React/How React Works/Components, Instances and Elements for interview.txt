@@ -1,0 +1,25 @@
+Component is what we write in order to descripe a piece of User Interface.
+Component is a JS function that returns React Elements!!!
+We write theis Elements using the JSX syntax!!!
+
+The Component is a Template. From this Template React creats one or multiple component instances!!!
+Reacts does this each time we use this component somewhere in our code. For Example:
+
+<Tab num={0} activeTab={activeTab} onClick={setActiveTab} />
+<Tab num={1} activeTab={activeTab} onClick={setActiveTab} />
+<Tab num={2} activeTab={activeTab} onClick={setActiveTab} />
+
+This are 3 instances of Tab in our component tree.
+Each intance(Tab) that holds it's own state and props and has own lifecicle.
+
+Each of the Instances will retun one or more React Elements !!!
+React Element contains all the information necessary ot create DOM Elements for this instace.
+This React Element will be converted to the actual DOM Element and painted ont the screen by the brouser!!!
+
+The DOM Element is the final representation of the component's instnace in the brouser!!!
+
+The React Elemnts are not directly rendered to the DOM. React Elements just live inside the React App,
+and have nothing to do with the DOM. 
+They are converted to DOM Elements when they are painted on the screen in the final step.
+
+State chnages triggers rendering!!!
