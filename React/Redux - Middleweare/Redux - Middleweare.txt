@@ -1,0 +1,25 @@
+How to make a async operation in Redux?
+Those operations must happend ouside a reducer!
+
+In Redux, Middleweare is a function that sits betweeen the dispatch and the store.
+The Middleweare allows deveopers to run some code after dispatching an action, but before that action
+reaches the reducer in the srore. With the Middleweare we can do some action before that action gets into the reducer.
+That's hy the Middleweare is the perfect place for the async API call.
+
+The Middleweare is the place where to put side effects in the Redux cicle.
+
+In a case of async operation the most popular Middleweare operation is called Redux Thunk(third party package).
+
+If we have the Redux Thunk Middleweare the action will no longer imidiately dispatched to the store, but will firat go into 
+the Middleweare. So into the Thunk. Than we can start fetching some data inise the Thunk, but it can be some other
+async operation.
+
+Basically the Thunk allows Redux to wait before dispatching the fetched data into the store.
+
+In order to use this Middleweare, we need to install the package, apply it to our store and use in in action functions.
+
+npm i redux-thunk;
+
+in the createStore function in store.js we pass the applayMiddleweare:
+and in the applyMiddleware we pass the thunk
+const store = createStore(rootReducer, applyMiddleware(thunk));
