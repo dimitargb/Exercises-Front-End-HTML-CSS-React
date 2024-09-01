@@ -1,0 +1,11 @@
+Creating a Thunk Middlewear by using the build in createAsyncThunk function.
+The idea is to implement the feature where aour users can use Geolocation, in order to get their GPS position.
+and their address.
+
+Let's open up the userSlice.js now.
+
+The Thunk is a Middlewear that sits between dispatching and the reducer. So it will do somthing to the dispatch action, 
+before updating the store.
+Now in order to create a Thunk we will use the createAsyncThunk function.
+
+export const fetchAddress = createAsyncThunk('/user/fetchAddress', async function(){}
