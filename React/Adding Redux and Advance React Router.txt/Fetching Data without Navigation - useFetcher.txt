@@ -1,0 +1,11 @@
+Lets find out how we can fetch and mutate data without using Navigation(without moving to another page)
+
+ const fetcher = useFetcher() in the Order.jsx Element.
+
+ const fetcher = useFetcher();
+
+useEffect(function(){
+        if(!fetcher.data && fetcher.idle === 'idle')
+        fetcher.load('/menu')
+    },[fetcher]);
+-> This will load the Data and will store it in the fecther object and later we can reteive the data from there.
