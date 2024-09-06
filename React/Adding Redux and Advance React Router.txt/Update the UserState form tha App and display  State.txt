@@ -1,0 +1,16 @@
+How we update the state inside Redux?
+We udate the State by dispatching an action to our Reducer.
+We do that by using the action creater that was automatically created by createSlice function.
+
+This is done in the CreateUser Element  in the submit form, as sonn as we click on StartOrdering button.
+
+
+We will update the Redux Store in the handleSubmit function when we click the button in the CreateUser Element.
+We get access to dispatch function by using the useDipatch hook provided by React Redux.
+We use the an action creater function from createSlice.js -> updateName(username).
+And what we need to pass in this function is the username.
+
+Now we need to redirect to the menu.
+For that we need the navigate function which we got from useNavigate(), part of React Router.
+
+We read data from Redux store with the useSelector hook -> const username = useSelector(state=>state.user.username);
