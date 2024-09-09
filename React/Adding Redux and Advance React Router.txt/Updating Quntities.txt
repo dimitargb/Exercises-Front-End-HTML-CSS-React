@@ -1,0 +1,21 @@
+We want to be able to increase and decrease the amount of Pizzas in the MenuItem and in the CartItem.
+
+We will create a reusable Component for that in the cart called UpdateItemQuantity.jsx
+
+and we need to recieve as prop the current pizzaId.
+
+function UpdateItemQuantity({pizzId}) {
+    const dipstach = useDispatch()
+
+    return ( 
+        <div>
+            <Button type='round'pizzId={pizzId}onClick={()=> dispatch()}>-</Button>
+            <Button type='round'pizzId={pizzId}>+</Button>
+        </div>
+    )
+}
+
+We use in dispatch the increaseItemQuantity() form cartSlice.js and decreaseItemQuantity()
+
+To display the number of ordered pizzas form same type we need access to the currentQuantity as a prop.
+
