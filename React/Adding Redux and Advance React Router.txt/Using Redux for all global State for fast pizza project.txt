@@ -1,0 +1,64 @@
+We gonna use Redux for all global state for the fast react pizz PROJECT. For the User State and for the Card State.
+Storing global UI State is exactely what Redux was made for.
+We will now start working on the user State. This user State is gonna be global UI State.The reason for that is that we need 
+this State in many places in this application.
+
+We need firstto install Redux:
+
+npm i @reduxjs/toolkit react-redux
+
+We start to create a State in the userSlice.js file
+
+const { createSlice } = require("@reduxjs/toolkit")
+
+const initialState = {
+    username: '',
+}
+
+const userSlice = createSlice({
+    name: 'user',
+    initialState,
+    reducers: {
+        updateName(state, action) {
+            state.username = action.payload;
+        },
+    },
+});
+
+export const{ updateName } = userSlice.actions;
+
+export default userSlice.reducer;
+
+After this we create a new file in the src to store the State, called store.js
+import { configureStore } from "@reduxjs/toolkit";
+import { useReducer } from './features/user/userSlice';
+
+const store = configureStore({
+    reducer: {
+        user: useReducer,
+    }
+});
+
+export default store;
+
+After this we need to connect the userSlice.js with store.js.
+In the main.jsx we use the provider Component which is part of React Redux Package.
+
+import React from "react"
+import ReactDOM from "react-dom/client"
+import App from "./App.jsx"
+import "./index.css"
+import { Provider } from "react-redux"
+import store from "./store.js"
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+    <React.StrictMode>
+        <Provider store={store}>
+        <App />
+        </Provider>
+    </React.StrictMode>,
+)
+
+And with this we are ready. Our Application should now be correctly connected to Redux.
+To check if it works we will try to get the state in the Username Component from Redux.
+The way we get a State from Redux inside a React Component is by using the useSelector() hook.
