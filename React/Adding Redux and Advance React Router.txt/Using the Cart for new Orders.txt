@@ -1,0 +1,7 @@
+We need to use the Cart data to submit a new Order.
+So we go to CreateOrder.jsx
+Insted of   const cart = fakeCart we use   const cart = useSelector();
+Inn the cartSlice.js file we have the Selctor -> getCart();
+So let's use this Selctor.
+
+const cart = useSelector(getCart);
