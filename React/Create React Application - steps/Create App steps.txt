@@ -1,0 +1,5 @@
+npx create-react-app@5 redux-intro
+
+npm i redux
+
+then import { createStore } from 'redux'; this is the old classic Redux way!
