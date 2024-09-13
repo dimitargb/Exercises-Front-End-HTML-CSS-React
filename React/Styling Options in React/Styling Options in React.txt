@@ -1,0 +1,20 @@
+Styling Options in React:
+
+1. To apply inline CSS ot JSX elemnts using the style prop !!! - those are local styles only for this element.
+2. External CSS file using the className prop!!! -  those are global styles only for all elements.
+
+In professional Projects CSS is almost never global, becaouse it can bring huge problems in the App.
+Instead CSS should be scoped in the individual Component.  Those are the CSS Modules!!!
+
+3. CSS Modules. We write one CSS file for each of out Components. The styles in that file will then be scoped for
+   only this Component, so no other Component can use them.
+
+4. CSS in JavaScript Library. We actually write our CSS in a JS file. It allows us to create React Components,
+    that have their styles direclty apllyed to them.
+
+5. Utility-first CSS Framework called(tailwindcss). Here we use predefined utilty Classes to define 
+    individual styles to use Flexbox, to make layout Responsive, to make hoover effects and to design the 
+    intire UI.
+
+6. You can use alternative to stylingwith CSS: UI Librarys like Matrial UI, Chakra UI, Mantine ect. Those Librarys
+    contains all kinds of prebuild and prestyled Components that a common in most web applications.
