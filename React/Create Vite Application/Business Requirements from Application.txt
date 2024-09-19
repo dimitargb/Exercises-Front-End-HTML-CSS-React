@@ -1,0 +1,27 @@
+ Step 1:
+
+    This should be a very simple application where users can order one or more pizzas from the menu.
+
+    This application dasen't require any user accout or login. Users just put theur names before using the app.
+
+    The pizza manu can change from time to time and it should be loaded from an API(back-end), which is done before.
+
+    Users can order mulitple pizzas from the menu so we need a cart.
+
+    Ordering requires the user name, phone number and address.
+    
+    If possible the GPS location should be also provided to make the delivery easyer.
+
+    Users should be able to mark their orders as a priority orders for addtional 20% charge.
+
+    The orders are made by sending a POST request with the order data to the API.
+
+    All payments are made on delivery, so no payment processing is needed in the application.
+
+    Each new order wil have unique ID that should be displayed, so the user can look their order based on the ID.
+
+    Users should be able to makr theis roder as 'priority' even after their order has been placed.
+
+
+
+    From this requirements we can start to understand what features we need to implement.
