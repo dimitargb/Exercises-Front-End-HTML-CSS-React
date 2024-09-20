@@ -1,0 +1,29 @@
+npm create vite@4(when creating own app - npm create vite@latest )
+than it will ask you for the project name - fast-react-pizza.
+thank use arrow keys to select react.
+than select JavaScript
+than we need to write npm install
+than we need to cofigure eslint.
+we write npm i eslint vite-plugin-eslint eslint-config-react app --save-dev,
+
+than we add to the fast-reatc-pizza folder, .eslintrc.json
+and we write in this folder - {
+                                "extends":"react-app"
+                                }
+And we than need to import something in viteconfig.js
+import eslint from'vite-plugin-eslint';
+export default defineConfig({
+  plugins: [react(), eslint()],
+})
+
+With this we should have correctly configured eslint in our project.
+Than we open the src folder nad delete the App.css and index.css
+and we delete the assets folder as well.
+In the main.jsx file we remove the -> import './index.css'
+
+And than we delete everything from App.jsx and we type rfc instead to use our ready made snipped.
+
+And finally we type npm run dev.
+
+Than we can start installing the Technologies:
+npm i react-router-dom@6
