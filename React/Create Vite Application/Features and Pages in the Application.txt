@@ -1,0 +1,14 @@
+Application main features categories:
+
+1. User
+2. Menu
+3. Cart - where the user can take one or more items from the manu and add them to their cart.
+4. Order 
+
+From this features categories we can start to uderstand the  pages that we are going to need to implement.
+
+1. Homepage - /
+2. Pizza Menu - /menu
+3. Cart - /cart
+4. Place a new order - /order/new
+5. Looning up an order - /order/:orderID
