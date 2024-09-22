@@ -1,0 +1,17 @@
+1. Breaking the desired User Interface into Components.
+2. Building a static version without state.
+3. After this we think about state managemant and data flow.
+
+In the more complex and real-world applications we need to start:
+
+1. By gathering application requirements and features. And base on those.
+
+2. Divide our application into multiple pages.
+   - for each page we can think about the overall and page-level  UI.
+   - than we can break the disired UI into its components.
+   - design and build the static version(no state yet).
+
+3. Than we need to place all the features into a few Categories.
+     - think about state managemant and data flow.
+
+4. Finally we need to dicide which libaries we want to use(technology decisions).
