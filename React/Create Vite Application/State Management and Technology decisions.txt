@@ -1,0 +1,20 @@
+
+Types fo State depending from the feature categories.
+
+State Slices form Redux :  1. User -> Global UI State(no accounts) and needs to be accessibale from many diffrent components
+                           2. Menu -> Global Remote State(menu is fetched form the API)
+                           3. Cart-> Global UI State(no need for API, just stored in the application)
+                           4. Order -> Global Remote State(fetched and submitted to API)
+
+
+
+Technologies building the Application.
+
+1. Routing -> ReactRouter (if you want to work with data fetching with ReactRouter you will need createBrowserRouter).
+2. Styling -> tailwindcss
+3. Remote State Management -> ReactRouter
+4. UI State Management -> Redux
+
+
+createBrowserRouter() is a function where we difine our routes and we do that by passing it an array of obejects
+where is Object is one route.
