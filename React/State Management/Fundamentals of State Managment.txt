@@ -1,0 +1,21 @@
+We can use the useState() function to create multiple pices of State in order to track Data that changes over the
+livecicle of of an application.
+
+State Managment is the decision: when we need to create new pieces of State, what type of State we need,
+where to place each piece of State and how the Data should flow through the application.
+
+We give each pice of Sate a home in within our code.
+
+Diffrence between global and local State in React.
+
+Local State is only in one Component or a few diffrent Components.
+We create Local State using the useState() function inside a certain Component.
+That pice of State is only accessable to that exact Component and Child Component if we use Props.
+
+Global State is a State where many diffrent Components might need access to.
+This State will become accessable to every single Component in the entire application.
+This Sate is called Shared State. It is shared between all Components.
+
+
+When to create State and where to place it?
+
