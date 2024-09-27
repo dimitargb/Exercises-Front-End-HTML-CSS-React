@@ -1,0 +1,27 @@
+Once the server sends a huge (JS file to the client) that is requesting it and this file is the Bundle.
+The Bandle is a JS file that contains the entire code of the application.
+Once the code was doawnload the entire React application is loaded at once, that turns it into SPA.
+The Bundle Size is the aount of JS code that every single user needs to doawnload in order to start
+using the application. There for the Bundle Size is the most important thing that we need to optimize.
+In order to do that we use a technique called code splitting. This takes the Bandle and splits it into
+multiple parts. 
+So intead a huge JS file we will have multiple smaller files which will be doawnloaded over time 
+as they become necessary for the application.
+This process of loading files sequensually is called lazy loading. 
+
+The most common way is to split the Bundle into the Route level(at the page level).
+What we do is to take all the components taht represent  a page and load each of them separately.
+
+With the lazy loading we will load the Route elements as we need them.
+
+Exsample:
+
+const Homepage = lazy(() => import("./pages/Homepage"));
+const Product = lazy(() => import("./pages/Product"));
+const Pricing = lazy(() => import("./pages/Pricing"));
+const Login = lazy(() => import("./pages/Login"));
+const AppLayout = lazy(() => import("./pages/AppLayout"));
+const PageNotFound = lazy(() => import("./pages/PageNotFound"));
+
+Now we need Suspense
+Suspense is part of modern React and allous some components to suspend(allos them to wait something to happend).
