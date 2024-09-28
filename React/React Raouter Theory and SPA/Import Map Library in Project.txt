@@ -1,0 +1,1 @@
+npm i react-leaflet leaflet -> we install react-leaflet  and leaflet
