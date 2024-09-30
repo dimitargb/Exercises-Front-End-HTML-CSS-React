@@ -1,0 +1,9 @@
+The goal of the useCallback Hook is to memoize Functions!!!
+
+We use the useCallBack Hook on a function:
+
+ const handleAddPost  =  useCallback(function handleAddPost(post) {
+    setPosts((posts) => [post, ...posts]);
+  }, []);
+
+Here only the function iteslf is actually memoized.
