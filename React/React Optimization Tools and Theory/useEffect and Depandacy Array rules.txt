@@ -1,0 +1,21 @@
+1. Every single state varibale and prob that is being ued in the Effect must be included in the depandancy array.
+    Any context value taht the Component has subcribed too must also be included in the depandancy array.
+    All values that are somehow connected to state, props or context, are react values!
+    All react values must be included as well:
+    const [number, setNumber] = useState(5);
+    const [duration, setDuration] = useState(0);
+    those are react values.
+
+2. The final rule is that we should not use objects or arrays as depandances!!!
+
+Effects must be used only as a last reaort when no other solution makes sence.
+
+When not to use an effect:
+
+1. Use an effect to responde for userEvent like a click or a keyStroke, inseted use eventHandler Function!!!
+
+2. Fetching data from API when the component first mounts, is fine to use for small apps 
+   but in real word is best to use a proffesional data fetching Library like a React Query.
+
+3. Effects are overused a lot to sinchronize stateChnages with one another. Try to use derived State 
+   and eventHandlers intead.
