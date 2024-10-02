@@ -1,0 +1,16 @@
+In order to stabiilize objects an Functions we use useMemo Hook.
+
+In order to do this we use useMemo() with callBack function:
+
+const archiveOptions = useMemo(() => {
+    return {
+      show:false,
+       title:'Post archive in addition to main posts',
+    };
+  });
+
+useMemo() takes in a callBack Function. The callBack Function will be staored in the memory(cached).
+We also need to pass in the depandecy array, which will determine when this callculation will be executed again, like
+the useEffect Hook.
+If the depandecy array is empty it means that this value will only be computed once in the beginnign and will then never
+change!
