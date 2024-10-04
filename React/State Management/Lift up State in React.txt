@@ -1,0 +1,2 @@
+Whenever multiple sibling Components need access to the same State, we move that pice of State up to the first 
+common Parent Component.
