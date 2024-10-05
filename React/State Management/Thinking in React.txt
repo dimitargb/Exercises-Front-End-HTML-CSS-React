@@ -1,0 +1,19 @@
+Thinking in React menas: how and when to use components, state, props, general Data flow ect.
+
+- It means thinking in State mutations, rather than elemnts mutaions.
+
+Thinking in React is a process:
+
+1. Break the disired UI into  components and how they are related to each other and establish the coponent tree.
+
+2. Srating by building a static version of the application(without state).
+
+3. Use State: - when to use State.
+               - Types of State: local / global.
+               - where to place each piece of State.
+4. Data flow thrue the application:
+ - one way data flow
+ - form Child to Parent communication
+ - accessing global State.
+
+ 3 and 4 is State Managments !!!
