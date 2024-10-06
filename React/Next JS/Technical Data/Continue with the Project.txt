@@ -1,0 +1,17 @@
+Now inside app we create a folder called cabins. Inside this folder we crate a JS file called by convention page.js.
+We write the export default function Page().
+This is actually a React Server Component. Whatever JS code we write here will be Server Side Rendered.
+
+export default function Page() {
+    return <h1>Cabins Page</h1>
+}
+
+That's all we have to do to set up a new page!
+If we want to create longer URL's with multiple segemnts we add another folder to cabins folder and inside we create test.js file
+
+export default function Test() {
+    return <h1>Test Page</h1>;
+  }
+This was just an example.
+
+Now we create the about route by creating abou folder and account route.
