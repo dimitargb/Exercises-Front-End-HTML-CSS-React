@@ -1,0 +1,28 @@
+What we have to do is to add a link in the Homepage that will link to our cabins Page.
+We put everything in a <div></div>
+Next JS provides us with the Link Component.
+
+export default function Page() {
+  return (
+    <div>
+    <h1>The Wild Oasis. Wellcome to paradise</h1>
+    <Link href="/cabins">Explore luxury cabins</Link>
+    </div>
+  )
+}
+
+Next JS also provides us with some Hooks for programatic Navigation.
+
+Lets create a Components Folder to create a reusable Component for Navigation.
+And inside we create a Component Navigation.js. After we go to our Homepage and import this Component.
+
+export default function Page() {
+  return (
+    <div>
+    <h1>The Wild Oasis. Wellcome to paradise</h1>
+    <Navigation/>
+    <Link href="/cabins">Explore luxury cabins</Link>
+    </div>
+  )
+}
+We want Navigation in all the pages, so we go to the other pages and import the Navigation Component as well in a div.
