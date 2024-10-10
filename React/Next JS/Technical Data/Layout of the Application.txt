@@ -1,0 +1,39 @@
+Each Next JS or any website needs to have one global layout, which we call the Route layout.
+So we go to layout.js and delete all the cone inside. 
+And we write:
+
+export default function Root() {
+  
+}
+
+This layout here will actually wrap the entire Application, there for it needs to conatin the HTML and the body Tag.
+What is returning from this Root layout component this is displayed on all the Pages.
+So how we get the Content of each Page into our layout. Here we use the concept of the Children prop.
+We use the children prop to show the text in the other Components.
+
+So int the layout.js we write:
+
+export  const metadata = {
+  title: 'The Wild Oasis',
+}
+
+export default function Root({children}) {
+   return <html lang='en'>
+    <body>
+      <Navigation/>
+      <main>
+        {children}
+      </main>
+    </body>
+   </html>
+}
+
+If we add footer under body, the text inside will appear in every single Page.
+We also can export some Page meta Data form this layout. We mean something like the Pages Title.
+
+With the metadata we change the Title name on top of the page.
+
+One more thing to add on the layout is the Logo. What we do is to create a Logo Component in the components folder.
+Than in the lyout.js we add hearer and inside we put the Logo and Navigation. In the Logo Component we must specify 
+the path of the logo picture -> img src="/logo.png".
+This layout is something that we call Server Components.
