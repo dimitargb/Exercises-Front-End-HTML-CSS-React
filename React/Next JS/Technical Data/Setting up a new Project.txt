@@ -1,0 +1,25 @@
+npx create-next-app@14 the-wild-oasis-website
+ - >npx create-next-app@latest(this is when we set it up in the future) 
+ yes
+ typescript - no,
+ ESlint - yes,
+ Tailwind Scc - yes'src/ directory - no,
+ App Router - yes,
+ Customize defaoult - no
+
+Afetr we start the Project we dlete all the junk files from app Folder and we leave the page.js file
+In pagejs we delete all the code.
+We leave just these:
+
+export default function Page() {
+  return (
+    <h1>Hello Next!<h1/>
+  );
+}
+
+And now start up our application.
+
+npm run dev 
+
+and we click ont teh localhost3000 link.
+We open out app and we see h1, which has been generated on the Server
