@@ -1,0 +1,14 @@
+What we need to do is to import the globlas.scc files. So we go to the layout.js where is the code that wraps our 
+entire Application. Here is the perfect place to import the scc files.
+
+import '@/app/_styles/globals.css';
+
+Now let's add some scc in the body.
+<body className="bg-blue-800"> as an exsample.
+
+Next we copy the code from colors.json{} and we go to tailwind.config.mjs and in the theme -> extend we paste the colors.
+Now we can use those colors in our Application(primary, accent).
+
+We also want to install icon labrary, which comes from Tailwind:
+
+npm i @heroicons/react
