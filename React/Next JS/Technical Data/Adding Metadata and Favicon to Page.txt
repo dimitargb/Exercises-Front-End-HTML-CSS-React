@@ -1,0 +1,27 @@
+The Metadata -> here for exsample the metadata is the title on the page:
+
+export const metadata = {
+  title: "The Wild Oasis",
+};
+
+But we can export Metadata from each individual Page, which will overwrite the metadat from the payout.
+Lets go to Cabins Page. And we write this meadata function:
+
+export const metadata = {
+  title: 'Cabins'
+}
+
+We can write it this way:
+export const metadata = {
+  //title: "The Wild Oasis",
+  title: {
+    template:'%s / The Wild Oasis',
+    default:'Wellcome/ The Wild Oasis'
+  },
+  description: 'Luxurious cabin hotel, located in the heart of the Italian Dolomites, surrounded by beautiful mountains and forests'
+};
+
+The Favicon is the icon that appears on top of the page naext to the URL.
+
+What we do we copy the logo.png, than paste it in the app folder. We need to call it icon.png, not logo.png beacouse 
+this is an Next JS convention. And now we can see the picture on top of the internet page.
