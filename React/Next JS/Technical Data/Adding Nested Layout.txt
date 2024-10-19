@@ -1,0 +1,20 @@
+We going to add a site Navigation to all our Routes in the Account area.
+Basically what we want is a layout that stays on the page for all the raouts on the Account Page.
+
+layout.js is the Route layout becaouse it does apply to the entire site.
+If we want to add a nested layout to just one part of the site, for one URL segment, all we have to do is to create another
+layout.js wright inside that Folder. In this particular case in the Account Folder.
+
+In order to get into the layout of the nasted pages as resrvations and profile we use teh React {children} prop into the function.
+
+export default function Layout({children}) {
+    return <div className="grid grid-cols-[16rem_1fr] h-full gap-12">
+            <div>Navigation</div>
+            <div>{children}</div>
+           </div>
+}
+
+Afetr that we need to get the SideNavigation and SignInButton from starter folder and put them into _components Folder.
+And all what we have to do is to import the SideNavigation.js into the layout.js
+
+The SignOutButton.js Component from the starter Folder also needs to go to _components Folder.
