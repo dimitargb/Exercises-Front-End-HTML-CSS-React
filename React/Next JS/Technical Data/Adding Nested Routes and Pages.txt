@@ -1,0 +1,15 @@
+We are going to add one subroute to trh account page for reservations and one for the profile.
+In order to create this nested Route we have to create a nested folder into accont folder called reservations and another one
+called profile  !!!
+Those folders need to get page.js files so they become routeable!!!
+We get those two pages from our starter folder.
+It has to be only page.js by convention, not other name!!!
+We also add the ReservationCard component to the _components folder.
+We have to install date-fns -> npm i date-fns;
+
+We also copy the h2 Tag form resrvations page and replace the h1 Tad in account Folder.
+And we write Wellcome 'username'.
+
+
+http://localhost:3000/account/reservations
+http://localhost:3000/account/profile
