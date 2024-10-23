@@ -1,0 +1,36 @@
+For the auhtentication in Next Js we are goint to use the Library Auth JS wihc makes it easyer to integrate
+authentication into an application. This Library is going to make it easyer to connect to many diffrent libraries as a Google, Facebook
+GitHub and many others.
+We are going to use Google.
+So we create a new file in our lib called auth.Js
+
+Before we write any code we need to set up a view enviorment veriables. So we go to .env.local and we difine NEXTAUTH_URL.
+
+NEXTAUTH_URL = here you need to provide the URL the app is running on. This is: http://localhost:3000/.
+After this we need to define NEXTAUTH_SECRET
+
+NEXTAUTH_SECRET = 
+Here we need to generate some Secret. 
+We can use generate secret from vrsel in the intrenet - https://generate-secret.vercel.app/48;
+710cd099be2b2cc4d5fc938fe3e36da0d745a1db78804944
+
+After this we need to configure Google to accept logins for our application.
+We type Google developer Console and here we need to create a new app.
+
+We start by Creat Project - is called -> the wild oasis website.
+On the left site of the created project we go to OAuth consent screen. Here we select External then Create.
+Than here you type the website name - The Wild Oasis Web Site.
+Than user supported e-mail : dimitardamianov2012@gmail.com and than save. Than save and continue.
+On the next page we can add ourself on the list - dimitardamianov@yahoo.com -> for now just this user can test the app.
+
+Than back to dashboard. Than later in some point we use the PUBLISH APP Button to move from testing to public application.
+
+Than we go to Credencials. We need to press the button on top + CREATE CREDETIALS and press OAuth client ID.
+Tnan on the application type we use Web application and in Authorized JavaScript origins we need to add some URL by
+pressing ADD URI-> The first one is : http://localhost:3000 and than 
+Authorized redirect URIs: http://localhost:3000/api/auth/callback/google than we press CREATE.
+Than we copy the Client ID and paste it to AUTH_GOOGLE_ID in teh .env.local file.
+And than AUTH_GOOGLE_SECRET we copy the client secret and paste it there.
+So with tis we are dont for now, later when we publish the app to production we will add those new URL.
+
+Now we need to install the AUTH JS Library -> npm install next-auth@beta
