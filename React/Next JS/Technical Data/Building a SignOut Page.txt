@@ -1,0 +1,17 @@
+We alreday exported the signOut function in the auth.js.
+So lets' now create a simular serveraction tot he one we created for the signIn Page.
+We go to action.js and create export async function signOut();
+
+export async function signOutAction() {
+  await signOut({ redirectTo: "/" });
+}
+So whenever the user signes out he wil be redirected to the Home page.
+Next what we have to do is to connect theis function with the SignOutButton Component.
+The SignOutButton is part of the SideNavigation.js. The SideNavigation is a Client Component meaning that 
+the SignOut Component will be also be a Client Component. What we do is to wrap the SignOutButton function into
+a form and we give it an action <form action={signOutAction}> 
+
+The Server action can be called on the Client, but they can still be executed on the Server.
+
+Now what we have to do is to somwhow connect those authenticated users in this application with the guetst form
+our supabase Database.
