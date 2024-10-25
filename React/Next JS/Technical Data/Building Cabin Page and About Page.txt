@@ -1,0 +1,28 @@
+Now we go to the Cabins Page in cabins Folder called page.js.
+Now we go to starter Folderand we find cabins-page.js in the pages Folder.
+
+We copy the entire function and replace it with the Cabins Page.
+We should as well add a CabinCard from starter file as well.
+We add this to our _components Folder.
+
+Thsi is now the Cabins Page. Now we move to the About Page.
+Now we take the code for the About page from starter Folder.
+We take the fiel about-page.js from starter Folder.
+And we replace the function in the about page.
+We replace the img with the Image Copmonent.
+We need statically to import the images.
+
+On the second Image we are loading image from somewhere else and we dont want to specify the with and high 
+properties, beacouse it should be fluid responsive image, so instead we say 'fill'.
+It fills the etire Page. Tha's why this image needs to be inside a container and we than specify the size of the container and
+make this image fit inside using object-fit set to cover.
+So first se set the div to relative. Than in the Image we set className = 'obeject-cover'.
+And we need to give tha parent <div> a size. So we put aspect-square which will set the aspect retio to one.
+
+So if we have a pic that we dont want to give dimantions, we palce those dimantions into the parent, in our case <div/>
+In our case using the aspect-square or aspect-ratio and className = 'obeject-cover'  inside the Image. We can use also somewhere
+other sixe here - aspect-video and others. Thuis way the image stays still responsive.
+
+Finally lets specify the placeholder set to blur but in the first image only.
+
+
