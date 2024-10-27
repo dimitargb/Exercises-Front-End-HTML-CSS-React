@@ -1,0 +1,6 @@
+In odrer to do this we go to account > reservations. What we need to do is to fetch all the Reservations made by the guest.
+For that we have a function in the data-service called getBookings().
+
+So what we do we call the getBookings() in the export default function Page() form reservations page.js instead of the 
+empty array.
+Than we go to the ReservationCasrd and we replase img with Image form next/image.
