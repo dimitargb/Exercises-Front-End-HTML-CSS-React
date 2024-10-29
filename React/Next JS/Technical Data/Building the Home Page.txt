@@ -1,0 +1,19 @@
+To do that we go to our Homepage wich is the page.js in the app Folder.
+We have a premade Component in starter folder called home-page.js 
+So we replace our page .js with home-page.js
+
+We reaplae the img with Image Component from next.js
+We also statically import the image:
+
+import Image from "next/image";
+import bg from '@/public/bg.png'
+
+Instead of specify the hight and with we can just use fill.
+This fills up the etire Element, the entire picture.
+And we use the object fit set to cover:
+
+fill className="object-cover"
+We can put oject-top and the image always staarts from the top.
+We can put an placholder and here we can specify 'blur'.
+placeholder="blur", this only works with images that are statically imported.
+Next we specify the quality{80}
