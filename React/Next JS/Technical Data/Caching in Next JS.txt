@@ -1,0 +1,15 @@
+Caching means taking Data that has been fetched or copmuted and storing it in a temporaly location for future access.
+This way when we need the same Data again in the future we can just takin it from the Cache insted of re-fetching it
+or re-computing it every time the Data is needed again.
+
+Everything that can be cached will be cached by Next JS.
+Caching is allways on by default in Next JS App, which can lead to a pagr to display Data that has not been updated to thr client.
+Many diffrent API' s affect and controll caching, it can be really difiicult, especaially for beginners.
+
+Caching Mechanisms in Next JS.
+There are 4 Caching Mechanisms, 3 of wich cach(store) Data on the Server:
+
+1. Request Memoization - Data is cached and reused only diring exactely one Page render(this only works in React Component Tree).
+2. Data Catche - stores all the Data in a specific Route or a single fetch request. Data is available for diffrent users.
+3. Full Route Cache - building a Routes and storin them as a static Pages in a form of HTML at buildtime.
+4. Router Cahce - Client Side Cache - this is used t store in the Brouser all the pre-fetched Pages static and dynamic.
