@@ -1,0 +1,16 @@
+What we need to do is to connect a logged in user with certain guets profile in our supabase Database.
+How will we store in our Database for exsample in Reservations who actually made the reservation.
+What we need is the guest table form our supabse Database.
+We need a way to connect that guets that just logged in our app with the profile in guest tbale in our supabase Database.
+
+Whenever a guest signes in we need to check if there is alerady a guest with that id int the guest table in our
+supabase Database and if this exsist we store that info in the session and than from than on our application
+knows the guest that has been logged in. If there is not any guest with that id in the guest tbale, than we create a new one.
+
+To do that we can specify another callback in the auth.js called signIn.
+
+For thatwe alreaedy have a function int the data-service called getGuest()
+if there is no exsistin guser we want to create a new guest, we have a function in the data-servise called createGuest(),
+where we pass in an Object newGuest();
+
+We need to add to auth.js another callback called session callback.
