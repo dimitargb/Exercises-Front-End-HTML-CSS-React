@@ -1,0 +1,8 @@
+We delete an Reservation by creating a Server Action in action.js and we creater a function 
+export async function deleteReservation(bookingId). 
+so we need to use 'use client' directive in the DeleteReservation.js Component.
+We put the onClick={} in the button.
+When we do some Server Action than we want the result of thet action to be reflected in the UI, all we do is to 
+refetch the Data. So we clear the cache, get the fresh Data and that fresh Data will be rendered on the Page.
+
+So what we do is to revalidate the cache.
