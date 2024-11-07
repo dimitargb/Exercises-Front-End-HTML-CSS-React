@@ -1,0 +1,6 @@
+The first step is to set up a gitHub repository woht our Project files. We write git add -A
+Than git commit -m 'Initial comit'
+Than we create a new Reposotory. than from the new page that appears we compy the last part and paste it to the powershel of the
+visual studio code and press enter. All the files should be now in the new Repository.
+
+Now we can move on and connect this Repository to Versel at versel.com
