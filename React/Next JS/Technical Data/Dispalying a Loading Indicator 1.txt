@@ -1,0 +1,12 @@
+In order to do that we use a new hook called useFormStatus();
+This hook must be used ib a Component that is rendered inside a Form, not in the Component that contins the Form.
+Because the element where we want to diplay this From status is the Update profile button, lets create a new Button
+for calling this hook.
+
+We create a new Function called Button and inside we use the useFormStatus hook and inside we conditionally render the text.
+
+Besically we need to create a new Component, that needs to be rendered inside the Form.
+Since useFormStatus() is a react dom hook, the Button function that we created needs to be a Client Component, but we 
+alreday have the 'use client' directive at the top, so all the Component in there will be Client Components.
+
+We need to make it clear, theta the Button function needs to be a Client Component in order to work.
